@@ -1,0 +1,31 @@
+@use "../../../theme";
+
+.location-pin {
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+
+    .square {
+        stroke: black;
+        stroke-dasharray: 224;
+        stroke-dashoffset: 0;
+        fill: none;
+        animation: stroke 1s ease-out forwards;
+    }
+
+    .pin {
+        stroke: theme.$primary;
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        stroke-linecap: round;
+        animation: stroke 2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+    }
+
+    @keyframes stroke {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}

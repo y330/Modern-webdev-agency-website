@@ -1,0 +1,30 @@
+@use "../../../theme";
+
+.checkmark {
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    stroke-width: 2.5;
+    stroke-miterlimit: 10;
+
+    .shield {
+        stroke: black;
+        stroke-dasharray: 0;
+        stroke-dashoffset: 300;
+        fill: none;
+    }
+
+    .check {
+        stroke: theme.$primary;
+        stroke-linecap: round;
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+        animation: stroke 2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+    }
+
+    @keyframes stroke {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}

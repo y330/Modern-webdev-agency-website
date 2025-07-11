@@ -1,0 +1,47 @@
+@use '../../theme';
+
+.error404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: calc(100vh - theme.$navbar-height);
+    background-color: theme.$body-bg;
+
+    span{
+        font-size: clamp(.75rem, 2vw, 1rem);
+        font-weight: 600;
+        color: theme.$primary;
+        background-color: theme.$primary-bg;
+        padding: .75rem 1.5rem;
+        border-radius: theme.$radius;
+    }
+
+    h1{
+        font-size: clamp(2rem, 5vw, 4rem);
+        color: theme.$text-header;
+    }
+
+    p{
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        color: theme.$text;
+    }
+
+    .gohome{
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: inherit;
+
+        p{
+            font-size: clamp(.6rem, 2vw, .8rem);
+            color: theme.$text;
+        }
+
+        button{
+            font-size: inherit;
+        }
+    }
+}

@@ -78,6 +78,26 @@
     }
 }
 
+.getstarted-info {
+    background: theme.$hover-grey;
+    color: theme.$text;
+    border-radius: theme.$radius;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid theme.$primary;
+
+    a {
+        color: theme.$primary;
+        text-decoration: underline;
+        transition: color 0.2s;
+        &:hover {
+            color: darken(theme.$primary, 10%);
+        }
+    }
+}
+
 .form-group {
     display: flex;
     flex-direction: column;

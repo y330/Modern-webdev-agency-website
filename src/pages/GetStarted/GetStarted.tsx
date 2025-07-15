@@ -139,6 +139,11 @@ const GetStarted = () => {
                 >
                     Tell us about your trade business
                 </motion.h2>
+                <div className="getstarted-info">
+                    <p>
+                        With the information you provide below, our team will professionally write all the content for your website. This ensures your site accurately reflects your business and appeals to your ideal customers.
+                    </p>
+                </div>
                 <form className="getstarted-form" onSubmit={handleSubmit} ref={formRef}>
                     <div className="input-row">
                         <div className="input-group">

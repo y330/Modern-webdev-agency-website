@@ -14,7 +14,7 @@ const About = () => {
             <div className='about-screen'>
                 <div className="hero">
                     <h1>About Us</h1>
-                    <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>Hello. We’re World Peace Web Services</motion.h2>
+                    <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>Hello. We are World Peace</motion.h2>
                     <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
                         We’re a Toronto-based web development studio dedicated to helping local trades and service businesses thrive online. Get a purpose-built website that enhances your presence on Google Maps and helps your business stand out locally.
                     </motion.p>

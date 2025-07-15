@@ -1,12 +1,6 @@
-import { useEffect, useRef, useState } from "react";
 import { AnimatedPage, Button, Checkmark, Clock, RouterLink, LocationPin } from "../../components";
 import "./Home.scss";
-import { MdDesignServices, MdCode, MdDeveloperMode, MdChevronRight, MdChevronLeft } from "react-icons/md";
-import { RiDoubleQuotesL } from "react-icons/ri";
-import { VisibleControls } from "../../hooks";
-import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import Hero from "./sections/Hero";
 import WhyUs from "./sections/WhyUs";
 import Services from "./sections/Services";

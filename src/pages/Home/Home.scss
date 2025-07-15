@@ -479,11 +479,6 @@
                     border-radius: theme.$radius;
                 }
 
-                &:nth-child(even) {
-                    img {
-                        // transform: translateY(4rem);
-                    }
-                }
                 .text {
                     display: flex;
                     align-items: center;

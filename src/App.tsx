@@ -5,6 +5,7 @@ import { Home, About, Contact, Loading, Portfolio, GetStarted, Pricing, Error404
 import { Navbar, Footer } from "./components";
 import { ScrollToTopOnRouteChange } from "./hooks";
 import { HelmetProvider } from "react-helmet-async";
+import ChatWithUs from "./pages/ChatWithUs";
 
 const App = () => {
 
@@ -31,8 +32,9 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            {/* <Route path="/portfolio" element={<Portfolio />} /> */}
-            <Route path="/get-started" element={<GetStarted />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/booking" element={<ChatWithUs />} />
+            <Route path="/start" element={<GetStarted />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="*" element={<Error404 />} />
           </Routes>

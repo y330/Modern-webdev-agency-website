@@ -20,16 +20,21 @@ const Portfolio = () => {
                     animate={{ opacity: 1, translateY: 0 }}>
                     Explore some of our latest projects
                 </motion.h2>
+                <motion.div className="portfolio-notice">
+                    <p>
+                        <strong>Notice:</strong> We are currently working on several exciting projects. This section will be updated soon to showcase new work. Stay tuned for updates!
+                    </p>
+                </motion.div>
                 <ul className="projects">
                     <Project
-                        title="Coming soon"
+                        title="HVAC 4U"
                         type="Website"
                         image="/Images/construction.png"
                         i={0}
                         inDev
                     />
                     <Project
-                        title="Coming soon"
+                        title="Premium Paint GTA"
                         type="Website"
                         image="/Images/construction.png"
                         i={1}
@@ -63,13 +68,13 @@ const Project = ({ title, type, image, inDev, i }: { title: string; type: string
                 />
             </motion.div>
             <div className="text">
-                <motion.h4
+                <motion.h4 className="title"
                     initial={{ opacity: 0, translateY: "100%" }}
                     animate={{ opacity: 1, translateY: 0 }}
                     transition={{ delay: 0.2 * (i + 2) }}>
                     {title}
                 </motion.h4>
-                <motion.p
+                <motion.p className="type"
                     initial={{ opacity: 0, translateY: "100%" }}
                     animate={{ opacity: 1, translateY: 0 }}
                     transition={{ delay: 0.2 * (i + 3) }}>

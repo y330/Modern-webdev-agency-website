@@ -21,17 +21,13 @@ const PortfolioShowcase = () => {
                     image="/Images/construction.png"
                     i={0}
                 />
-                <Project
-                    image="/Images/construction.png"
-                    i={1}
-                />
             </ul>
-            {/* <RouterLink
+            <RouterLink
                 to="/portfolio"
                 variant="link"
                 arrow>
                 See more projects
-            </RouterLink> */}
+            </RouterLink>
         </section>
     );
 };

@@ -147,9 +147,9 @@ const WhyUs = () => {
                         hidden: { opacity: 0, translateY: "100%" }
                     }}>
                     <RouterLink
-                        to="/get-started"
+                        to="/booking"
                         variant="white">
-                        Get Started
+                        Chat With Us
                     </RouterLink>
                 </motion.div>
             </div>

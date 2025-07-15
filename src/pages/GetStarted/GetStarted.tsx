@@ -1,10 +1,12 @@
 import { Helmet } from "react-helmet-async";
-import "./GetStarted.scss";
 import { motion } from "framer-motion";
 import { useState, useRef } from "react";
-import useAutoResizeTextarea from "../../hooks/AutoResizeTextarea";
 import emailjs from "@emailjs/browser";
+
+import useAutoResizeTextarea from "../../hooks/AutoResizeTextarea";
 import Snackbar from '../../components/Snackbar/Snackbar';
+
+import "./GetStarted.scss";
 
 const questions = [
     {
@@ -145,7 +147,9 @@ const GetStarted = () => {
                     </p>
                 </div>
                 <form className="getstarted-form" onSubmit={handleSubmit} ref={formRef}>
-                    <div className="input-row">
+                    <h3 className="form-title">Send Us Your Details</h3>
+                    <p className="form-subheading">To best support world peace, please complete all fields in the form below.</p>
+                    <div className="input">
                         <div className="input-group">
                             <input
                                 id="businessName"
@@ -172,8 +176,6 @@ const GetStarted = () => {
                             />
                             <label htmlFor="personalName">Your Name</label>
                         </div>
-                    </div>
-                    <div className="input-row">
                         <div className="input-group">
                             <input
                                 id="phone"
@@ -198,18 +200,18 @@ const GetStarted = () => {
                             />
                             <label htmlFor="email">Email</label>
                         </div>
-                    </div>
-                    <div className="input-group full-width">
-                        <input
-                            id="googleMap"
-                            name="googleMap"
-                            type="text"
-                            placeholder=" "
-                            value={form.googleMap}
-                            onChange={handleChange}
-                            autoComplete="off"
-                        />
-                        <label htmlFor="googleMap">Google Maps Link</label>
+                        <div className="input-group">
+                            <input
+                                id="googleMap"
+                                name="googleMap"
+                                type="text"
+                                placeholder=" "
+                                value={form.googleMap}
+                                onChange={handleChange}
+                                autoComplete="off"
+                            />
+                            <label htmlFor="googleMap">Google Maps Link</label>
+                        </div>
                     </div>
                     {questions.map((q, idx) => {
                         const ref = useAutoResizeTextarea(form[q.name as keyof typeof form]);
@@ -240,7 +242,7 @@ const GetStarted = () => {
                     type={snackbar.type}
                     onClose={() => setSnackbar({ ...snackbar, open: false })}
                 />
-            </section>
+            </section >
         </>
     );
 };

@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { RouterLink } from "../../../components";
 import { VisibleControls } from "../../../hooks";
 
-const QuickContact = () => {
+const QuickGetStarted = () => {
     const ref = useRef(null);
     const controls = VisibleControls(ref);
 
@@ -11,8 +11,8 @@ const QuickContact = () => {
         <section
             ref={ref}
             className="contact"
-            id="contact">
-            <h2>Contact</h2>
+            id="get-started">
+            <h2>Get Started</h2>
             <h3>
                 <motion.div
                     animate={controls}
@@ -21,7 +21,7 @@ const QuickContact = () => {
                         visible: { opacity: 1, translateY: 0 },
                         hidden: { opacity: 0, translateY: "200%" }
                     }}>
-                    Interested?
+                    Ready to grow?
                 </motion.div>
                 <motion.div
                     animate={controls}
@@ -30,7 +30,7 @@ const QuickContact = () => {
                         visible: { opacity: 1, translateY: 0 },
                         hidden: { opacity: 0, translateY: "200%" }
                     }}>
-                    Send us a message
+                    Start your journey with us!
                 </motion.div>
             </h3>
             <motion.div
@@ -42,13 +42,13 @@ const QuickContact = () => {
                 }}>
                 <RouterLink
                     variant="primary"
-                    to="/contact"
+                    to="/get-started"
                     className="pulsating">
-                    Contact Us
+                    Get Started
                 </RouterLink>
             </motion.div>
         </section>
     );
 };
 
-export default QuickContact;
+export default QuickGetStarted;

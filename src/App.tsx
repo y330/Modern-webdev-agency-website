@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Home, About, Contact, Loading, Portfolio, Pricing, Error404 } from "./pages";
+import { Home, About, Contact, Loading, Portfolio, GetStarted, Pricing, Error404 } from "./pages";
 import { Navbar, Footer } from "./components";
 import { ScrollToTopOnRouteChange } from "./hooks";
 import { HelmetProvider } from "react-helmet-async";
@@ -23,7 +23,7 @@ const App = () => {
   return (
     <HelmetProvider>
       {loadingVisible && <Loading />}
-      {appVisible && 
+      {appVisible &&
         <BrowserRouter>
           <ScrollToTopOnRouteChange />
           <Navbar />
@@ -31,7 +31,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+            <Route path="/get-started" element={<GetStarted />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="*" element={<Error404 />} />
           </Routes>

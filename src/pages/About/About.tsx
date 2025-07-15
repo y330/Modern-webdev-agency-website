@@ -33,7 +33,7 @@ const About = () => {
                     <div className="text">
                         <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.4 }}>About Me</motion.h2>
                         <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.6 }}>
-                            I’m a detail-driven software developer with over five years of experience building digital solutions for local impact. Combining expertise in computer science and psychology, I build websites and platforms that feel as good as they function—designed to uplift trades, service businesses, and local communities.
+                            I’m a detail-driven software developer with over five years of experience building software that matters. Combining expertise in computer science and psychology, I build websites and platforms that feel as good as they function—designed to uplift trades, professionals, and local communities.
                         </motion.p>
                     </div>
                 </div>

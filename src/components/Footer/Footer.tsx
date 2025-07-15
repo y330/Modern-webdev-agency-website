@@ -16,7 +16,7 @@ const Footer = () => {
                     </Link>
 
                     <p>
-                        We help your business thrive digitally. We will build you a website that enhances your presence on Google Maps and helps your business stand out locally.
+                        Today, we help trades and service professionals build an online presence. Tomorrow, we help community-focused missions do the same.
                     </p>
                 </div>
                 <div className="links">
@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="separator"></div>
-            <p className='copyright'>Copyright © 2022 World Peace Web Services</p>
+            <p className='copyright'>Copyright © 2025 World Peace Web Services</p>
         </footer>
     )
 }

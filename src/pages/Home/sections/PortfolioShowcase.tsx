@@ -11,18 +11,27 @@ const PortfolioShowcase = () => {
             id="portfolio">
             <h2>Portfolio</h2>
             <h3>Explore some of our latest work</h3>
+            <div className="portfolio-notice">
+                <p>
+                    <strong>Notice:</strong> We are currently working on several exciting projects. This section will be updated soon to showcase new work. Stay tuned for updates!
+                </p>
+            </div>
             <ul className="projects">
                 <Project
                     image="/Images/construction.png"
                     i={0}
                 />
+                <Project
+                    image="/Images/construction.png"
+                    i={1}
+                />
             </ul>
-            <RouterLink
+            {/* <RouterLink
                 to="/portfolio"
                 variant="link"
                 arrow>
                 See more projects
-            </RouterLink>
+            </RouterLink> */}
         </section>
     );
 };

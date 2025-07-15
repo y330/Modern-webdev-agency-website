@@ -55,7 +55,7 @@ const Hero = () => {
                 transition={{ delay: 1.5 }}>
                 <RouterLink
                     variant="primary"
-                    to="/contact"
+                    to="/get-started"
                     className="pulsating">
                     Get Started
                 </RouterLink>

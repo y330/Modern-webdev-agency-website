@@ -1,0 +1,123 @@
+@use "../../theme" as theme;
+
+.getstarted-screen {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 15vw;
+    min-height: calc(100vh - theme.$navbar-height);
+
+    h1 {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        color: theme.$primary;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: clamp(1rem, 5vw, 2.5rem);
+        color: theme.$text-header;
+        text-align: center;
+    }
+}
+
+.getstarted-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 3rem 3rem 3rem;
+    background: theme.$navbar-bg;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08); // No direct theme var for this
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.input-row {
+    display: flex;
+    gap: 1vw;
+    // margin: 1rem 0.5rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex: 1;
+    gap: 1vw;
+    margin: 1rem 0.5rem;
+
+    label {
+        font-size: clamp(0.8rem, 1vw, 1rem);
+        color: theme.$text;
+        position: absolute;
+        pointer-events: none;
+        top: 1rem;
+        transition: all 0.25s;
+    }
+
+    input {
+        width: 100%;
+        resize: none;
+        outline: none;
+        background-color: transparent;
+        padding: 1rem 0;
+        border: none;
+        border-bottom: 2px solid theme.$border;
+    }
+
+    input {
+        &:focus,
+        &:not(:placeholder-shown) {
+            border-bottom: 2px solid theme.$primary;
+
+            & ~ label {
+                font-size: clamp(0.5rem, 1vw, 0.75rem);
+                top: -0.5rem;
+                color: theme.$primary;
+            }
+        }
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label {
+        font-weight: 500;
+        color: theme.$text-header;
+        margin-bottom: 0.2rem;
+    }
+    textarea {
+        min-height: fit-content;
+        max-height: fit-content;
+        padding: 0.8rem;
+        border: 1px solid theme.$border;
+        border-radius: theme.$radius;
+        font-size: 1rem;
+        resize: vertical;
+        background: theme.$hover-grey;
+        transition: border 0.2s;
+        &:focus {
+            border: 1.5px solid theme.$primary;
+            outline: none;
+            background: theme.$navbar-bg;
+        }
+    }
+}
+.submit-btn {
+    align-self: flex-end;
+    background: theme.$primary;
+    color: theme.$navbar-bg;
+    border: none;
+    border-radius: theme.$radius;
+    padding: 0.8rem 2.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07); // No direct theme var for this
+    transition: background 0.2s;
+    &:hover {
+        background: darken(theme.$primary, 10%);
+    }
+}

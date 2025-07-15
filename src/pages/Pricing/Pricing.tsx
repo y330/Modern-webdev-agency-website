@@ -52,8 +52,9 @@ const Pricing = () => {
                     >
                         <span className="tag">Basic</span>
                         <span className="from">From</span>
-                        <span className="price">$199</span>
+                        <span className="price">$150</span>
                         <ul>
+                            <li>One Beautiful Landing Page</li>
                             <li>Up to 3 Sections</li>
                             <li>Mobile Friendly</li>
                         </ul>
@@ -66,9 +67,9 @@ const Pricing = () => {
                     >
                         <span className="tag">Standard</span>
                         <span className="from">From</span>
-                        <span className="price">$299</span>
+                        <span className="price">$200</span>
                         <ul>
-                            <li>Up to 10 Sections</li>
+                            <li>Up to 3 pages</li>
                             <li>Mobile Friendly</li>
                             <li>Cool Animations</li>
                             <li>Contact Form</li>
@@ -84,7 +85,7 @@ const Pricing = () => {
                     >
                         <span className="tag">Premium</span>
                         <span className="from">From</span>
-                        <span className="price">$399</span>
+                        <span className="price">$300</span>
                         <ul>
                             <li>Unlimited Sections</li>
                             <li>Responsive Design</li>
@@ -95,10 +96,30 @@ const Pricing = () => {
                             <li>Speed Optimization</li>
                         </ul>
                     </motion.div>
+                    {/* Additional Services Card */}
+                    <motion.div
+                        className="package logodesign"
+                        initial={{ opacity: 0, translateY: '100%' }}
+                        animate={{ opacity: 1, translateY: 0 }}
+                        transition={{ delay: 0.8 }}
+                    >
+                        <span className="tag">Additional Service</span>
+                        <span className="from">Logo Design</span>
+                        <span className="price">$50</span>
+                        <ul>
+                            <li>Custom, professional logo tailored to your brand</li>
+                            <li>Delivered in high-resolution formats for web & print</li>
+                            <li>Unique, memorable, and scalable design</li>
+                            <li>Perfect for business cards, websites, and signage</li>
+                            <li>Fast turnaround and collaborative process</li>
+                        </ul>
+                    </motion.div>
+
                 </div>
 
+
                 {/* 📱 Social Media Packages */}
-                <div className="lower-text">
+                {/* <div className="lower-text">
                     <h2>Looking for help with social media too?</h2>
                     <p>We also help you craft a social media page that connects, engages, and reflects your business’s purpose.</p>
                 </div>
@@ -153,7 +174,7 @@ const Pricing = () => {
                             <li>Platform Support (Instagram, Facebook, LinkedIn)</li>
                         </ul>
                     </motion.div>
-                </div>
+                </div> */}
 
             </div>
         </AnimatedPage>

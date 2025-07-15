@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './Contact.scss';
 import { Anchor, AnimatedPage, Button } from '../../components';
-import emailjs from '@emailjs/browser';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { MdEmail } from 'react-icons/md';
@@ -14,12 +14,18 @@ const Contact = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_wbib4ob', 'template_234jnup', e.currentTarget, 'UIsk6ldu4j8ZHw4gl')
-            .then((result) => {
+        emailjs.sendForm(
+            String(import.meta.env.VITE_EMAILJS_SERVICE_ID),
+            String(import.meta.env.VITE_EMAILJS_TEMPLATE_ID),
+            e.currentTarget,
+            String(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+        )
+            .then((result: EmailJSResponseStatus) => {
                 console.log(result.text);
                 setStatus({ type: 'success', message: 'Message sent successfully' });
                 formRef.current?.reset();
-            }, (error) => {
+            })
+            .catch((error: any) => {
                 console.log(error.text);
                 setStatus({ type: 'error', message: 'Something went wrong. Please try again.' });
             });

@@ -434,7 +434,27 @@
         h3 {
             text-align: center;
         }
+        .portfolio-notice {
+            background: theme.$primary-bg;
+            border: 1.5px solid theme.$primary;
+            color: theme.$text-header;
+            padding: 1.2rem 1.5rem;
+            border-radius: theme.$radius;
+            margin: 1.5rem 0 2.5rem 0;
+            font-size: 1.08rem;
+            box-shadow: 0 2px 12px rgba(34, 139, 230, 0.06);
+            display: flex;
+            align-items: center;
 
+            p {
+                margin: 0;
+
+                strong {
+                    color: theme.$primary;
+                    font-weight: 600;
+                }
+            }
+        }
         .projects {
             display: grid;
             grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -461,7 +481,7 @@
 
                 &:nth-child(even) {
                     img {
-                        transform: translateY(4rem);
+                        // transform: translateY(4rem);
                     }
                 }
                 .text {

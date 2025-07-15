@@ -41,9 +41,9 @@ const FeaturedPricing = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        <span className="tag">Basic</span>
+                        <span className="tag">Standard</span>
                         <span className="from">From</span>
-                        <span className="price">$150</span>
+                        <span className="price">$200</span>
                         <ul>
                             <li>Up to 3 pages</li>
                             <li>Responsive Design</li>

@@ -123,7 +123,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        Based in Downtown Toronto, we understand what local businesses need.
+                        Based in Downtown Toronto, we’re tuned into what helps local businesses thrive.
                     </motion.p>
                 </div>
             </div>

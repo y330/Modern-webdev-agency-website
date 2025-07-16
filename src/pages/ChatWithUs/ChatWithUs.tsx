@@ -1,10 +1,13 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import "./ChatWithUs.scss";
+import { Button } from "../../components";
+import { useState } from "react";
 
 const GOOGLE_CALENDAR_LINK = "https://calendar.app.google/CWChv4B32iwdE2heA";
 
 const ChatWithUs = () => {
+
     return (
         <>
             <Helmet>
@@ -22,24 +25,36 @@ const ChatWithUs = () => {
                 >
                     Book a Free Consultation Call
                 </motion.h2>
-                <div className="chatwithus-info messagebubble">
-                    <p>
-                        Schedule a free, no-pressure call to discuss your business, your goals, and how we can help you grow online. We'll answer your questions, offer expert advice, and help you take the next step with confidence.
-                    </p>
-                </div>
-                <div className="calendar-booking">
-                    <h3>Find a time that works for you:</h3>
-                    {/* Cool idea: add a UX design that shows asks Do you want to book a call or not, if yes imessage typing indicator pops up and then says in messagebubble "Alright, taking you to our booking page." then automatically redirect user */}
-                    <a
-                        href={GOOGLE_CALENDAR_LINK}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="calendar-btn"
-                    >
-                        Book a Call via Google Calendar
-                    </a>
-                </div>
-            </section>
+
+                <motion.img
+                    src="/Images/book-an-appointment.png"
+                    alt="Book an appointment"
+                    className="chatwithus-img"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.2, delay: 0.2 }}
+                />
+
+
+                <motion.div
+                    className="calendar-booking"
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 40 }}
+                    transition={{ duration: 0.2, ease: 'easeOut', delay: 0.2 }}
+                >
+                    <Button variant="primary" className="pulsating calendar-btn">
+                        <a
+                            href={GOOGLE_CALENDAR_LINK}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="calendar-link"
+                        >
+                            Book a Call via Google Calendar
+                        </a>
+                    </Button>
+                </motion.div>
+            </section >
         </>
     );
 };

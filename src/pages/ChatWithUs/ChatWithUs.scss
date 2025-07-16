@@ -6,7 +6,7 @@
     flex-direction: column;
     padding: 10vh 15vw;
     min-height: calc(100vh - theme.$navbar-height);
-
+    align-items: center;
     h1 {
         font-size: clamp(1rem, 3vw, 1.5rem);
         color: theme.$primary;
@@ -29,7 +29,6 @@
         margin: 1.5rem auto 0.5rem auto;
         max-width: 420px;
         padding: 0.8rem;
-
         min-width: 180px;
         border: 1.5px solid #b2d7fb;
         border-radius: 1rem;
@@ -47,38 +46,34 @@
         border: 1.5px solid #b2d7fb;
         border-radius: 1rem;
         object-fit: cover;
-        margin: 1.5rem auto 0.5rem auto;
+        margin: 1.5rem 0 0.5rem 0;
         max-width: 420px;
         min-width: 180px;
     }
 }
 
 .calendar-booking {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
-    h3 {
-        font-size: clamp(1rem, 2vw, 1.25rem);
-        color: theme.$primary;
-        // margin-bottom: 0.5rem;
-    }
-
     .calendar-btn {
         // background: theme.$primary;
         // color: #fff;
-        padding: 0.75rem 2rem;
+        // max-width: 90%;
         border-radius: theme.$radius;
-        font-size: 1.1rem;
         text-decoration: none;
         font-weight: 600;
-        transition: color 0.2s;
+        // transition: color 0.2s;
         // box-shadow: 0 2px 8px rgba(34, 139, 230, 0.07);
         &:hover a {
             text-decoration: none;
             color: theme.$primary-bg !important;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .calendar-booking {
+            max-width: 50%;
+            .calendar-btn {
+                padding: 0.75rem 2rem;
+            }
         }
     }
 }

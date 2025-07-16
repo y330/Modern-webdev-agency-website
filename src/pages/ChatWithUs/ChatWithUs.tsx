@@ -32,16 +32,14 @@ const ChatWithUs = () => {
                     className="chatwithus-img"
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.2, delay: 0.2 }}
+                    transition={{ delay: 0.6 }}
                 />
-
-
                 <motion.div
                     className="calendar-booking"
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 40 }}
-                    transition={{ duration: 0.2, ease: 'easeOut', delay: 0.2 }}
+                    transition={{ delay: 0.6 }}
                 >
                     <Button variant="primary" className="pulsating calendar-btn">
                         <a
@@ -54,6 +52,8 @@ const ChatWithUs = () => {
                         </a>
                     </Button>
                 </motion.div>
+
+
             </section >
         </>
     );

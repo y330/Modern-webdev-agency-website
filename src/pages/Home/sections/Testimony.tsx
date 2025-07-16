@@ -28,7 +28,7 @@ const Testimony = () => {
                     hidden: { opacity: 0, translateY: "100%" }
                 }}
                 className="quote">
-                The best way to find yourself is to lose yourself in the service of others. World Peace Web Services embodies this philosophy, helping businesses thrive online while making a positive impact in their communities. Book a call with them today!
+                    Thank you World Peace Web Services! Saved me the headache of dealing with updating my website.
             </motion.span>
             <motion.span
                 animate={controls}
@@ -38,7 +38,7 @@ const Testimony = () => {
                     hidden: { opacity: 0, translateY: "100%" }
                 }}
                 className="author">
-                – Ghandi
+                – J. Ross
             </motion.span>
         </section>
     );

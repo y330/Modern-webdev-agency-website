@@ -13,7 +13,7 @@ const Contact = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
+        console.log(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
         emailjs.sendForm(
             String(import.meta.env.VITE_EMAILJS_SERVICE_ID),
             String(import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID),

@@ -92,6 +92,8 @@ const GetStarted = () => {
             return;
         }
         setSubmitting(true);
+        console.log(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+        // Send form data to EmailJS
         emailjs
             .sendForm(
                 import.meta.env.VITE_EMAILJS_SERVICE_ID,

@@ -457,7 +457,7 @@
         }
         .projects {
             display: grid;
-            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            // grid-template-columns: repeat(2, minmax(300px, 1fr));
             // gap: 2rem;
             margin-top: 5vh;
             padding-bottom: 8rem;
@@ -499,8 +499,8 @@
             }
 
             @media screen and (max-width: 1024px) {
-                grid-template-columns: repeat(1, minmax(300px, 1fr));
-                width: 100%;
+                // grid-template-columns: repeat(1, minmax(300px, 1fr));
+                width: 80%;
             }
 
             @media screen and (max-width: 768px) {

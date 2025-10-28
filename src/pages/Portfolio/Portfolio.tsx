@@ -31,7 +31,7 @@ const Portfolio = () => {
                         type="Ecommerce"
                         image="/Images/actualize-merch-store.png"
                         desc="A Community For Young Entrepreunial Men In Toronto Who Want To Plug Into A Brotherhood & Become Their Best Self"
-                        link="actualize.club/apparel"
+                        link="https://www.actualize.club/apparel"
                         i={0}
                         inDev
                     />
@@ -74,7 +74,7 @@ const Project = ({ title, type, image, desc, link, inDev, i }: { title: string; 
                 initial={{ opacity: 0, translateY: "20%" }}
                 animate={{ opacity: 1, translateY: 0 }}
                 transition={{ delay: 0.2 * (i + 1) }}>
-                <a href={link}>
+                <a href={link} target="_blank" rel="noreferrer">
                     <img
                         src={image}
                         alt={title} />

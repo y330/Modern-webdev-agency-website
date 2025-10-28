@@ -461,7 +461,7 @@
             // gap: 2rem;
             margin-top: 5vh;
             padding-bottom: 8rem;
-            width: 80%;
+            width: 50vw;
 
             .project {
                 width: 100%;
@@ -495,12 +495,12 @@
             }
 
             @media screen and (max-width: 1200px) {
-                width: 100%;
+                width: 50vw;
             }
 
             @media screen and (max-width: 1024px) {
                 // grid-template-columns: repeat(1, minmax(300px, 1fr));
-                width: 80%;
+                width: 50vw;
             }
 
             @media screen and (max-width: 768px) {

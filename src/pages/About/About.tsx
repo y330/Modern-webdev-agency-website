@@ -14,21 +14,22 @@ const About = () => {
             <div className='about-screen'>
                 <div className="hero">
                     <h1>About Us</h1>
-                    <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>Hello. We are World Peace</motion.h2>
+                    <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>
+                        What we do</motion.h2>
                     <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
                         We’re a Toronto-based web development studio dedicated to helping local trades and service businesses thrive online. Get a purpose-built website that enhances your presence on Google Maps and helps your business stand out locally.
                     </motion.p>
                     <motion.h3 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>What do we believe?</motion.h3>
 
                     <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
-                        At World Peace Web Services, we believe that technology can uplift humanity. While our current services revolve around helping you grow an online presence, our greater purpose is to support missions that promote peace, equity, and dignity. Someday, we’ll scale solutions to elevate communities. Right now, we’re here to help your business thrive digitally.
+                        At World Peace Web Services, we believe that technology can uplift humanity. We’re passionate about using our skills to create websites and applications that not only look great but also make a positive impact on the world. Whether it’s helping a local business grow or supporting a non-profit organization, we’re committed to making a difference through technology.
                     </motion.p>
                 </div>
                 <div className="about">
                     <motion.div className="member" initial={{ opacity: 0, translateX: "-100%" }} animate={{ opacity: 1, translateX: 0 }} transition={{ delay: 0.8 }}>
                         <img src="/Images/Me.png" alt="Photo of team member" />
                         <h3>Yonah</h3>
-                        <p>CEO / Developer</p>
+                        <p>Founder</p>
                     </motion.div>
                     <div className="text">
                         <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.4 }}>About Me</motion.h2>

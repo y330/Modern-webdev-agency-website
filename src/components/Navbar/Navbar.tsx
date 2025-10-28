@@ -39,9 +39,9 @@ const Navbar = () => {
 const Nav = () => {
     const navItemProps = [
         { label: "Home", link: "/" },
-        // { label: "Portfolio", link: "/portfolio" },
+        { label: "Portfolio", link: "/portfolio" },
         { label: "Chat With Us", link: "/booking" },
-        { label: "Pricing", link: "/pricing" },
+        // { label: "Pricing", link: "/pricing" },
         { label: "About Us", link: "/about" },
         { label: "Contact", link: "/contact" }
     ];

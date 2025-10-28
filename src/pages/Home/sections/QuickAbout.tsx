@@ -18,7 +18,7 @@ const AboutHighlight = () => {
                     visible: { opacity: 1, translateX: 0 },
                     hidden: { opacity: 0, translateX: "-50%" }
                 }}>
-                World Peace Web Services helps trades and service-based businesses in the GTA grow online with purpose and impact.
+                We specialize in websites that make life easier, work more efficient, and missions more impactful
             </motion.h2>
             <div className="bottom">
                 <motion.p
@@ -28,7 +28,7 @@ const AboutHighlight = () => {
                         visible: { opacity: 1 },
                         hidden: { opacity: 0 }
                     }}>
-                    We craft tailored websites designed to boost your presence on Google Maps and help your business stand out in your local community.
+                    We’re passionate about working on missions that serve people and create positive change. But whether your goal is impact or simply getting your business online, we’re here to help.
                 </motion.p>
                 <RouterLink
                     variant="link"

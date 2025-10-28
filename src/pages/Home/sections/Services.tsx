@@ -83,10 +83,10 @@ const Services = () => {
                         <div className="icon">
                             <MdDesignServices />
                         </div>
-                        <h4>Trade/Service</h4>
+                        <h3>Trade/Service</h3>
                     </div>
                     <p>
-                        We build custom websites for trades and service businesses that are easy to navigate, mobile-friendly, and tailored to real-world clients. Our designs help customers find what they need quickly—so your work speaks for itself online.
+                        We build custom labnding pages for trades and service businesses that are easy to navigate, mobile-friendly, and tailored to real-world clients. Our designs help customers find what they need quickly so your work speaks for itself online.
                     </p>
                     <ul>
                         <li>Concept</li>
@@ -94,8 +94,8 @@ const Services = () => {
                         <li>Design</li>
                         <li>Icons</li>
                         <li>Animations</li>
-                        <li>Typography</li>
-                        <li>Logos</li>
+                        <li>Logo Design</li>
+                        <li>Branding</li>
                         <li>Hosting</li>
                         <li>Domain</li>
                         <li>SEO</li>
@@ -113,12 +113,11 @@ const Services = () => {
                         <div className="icon">
                             <MdCode />
                         </div>
-                        <h4>E-commerce</h4>
+                        <h3>E-commerce</h3>
                     </div>
                     <p>We build powerful e-commerce websites designed to help your trade or service business sell with ease, scale with confidence, and connect with customers around the clock. From clean product layouts to secure checkout systems, we focus on performance, trust, and results.</p>
                     <ul>
                         <li>Frontend</li>
-                        <li>Backend</li>
                         <li>API</li>
                         <li>Database</li>
                         <li>Authentication</li>
@@ -139,14 +138,16 @@ const Services = () => {
                         <div className="icon">
                             <MdDeveloperMode />
                         </div>
-                        <h4>Social Media</h4>
+                        <h3>Software</h3>
                     </div>
-                    <p>We help small businesses grow their brand on social media with strategy and heart. From profile optimization to content planning, we craft digital identities that build trust, attract customers, and promote a more connected community.</p>
+                    <p>Need help with another kind of website or custom software? We’re happy to support any project, especially those built to serve people or make life easier. Let’s talk.</p>
                     <ul>
-                        <li>Profile Optimization</li>
+                        <li>Purposeful Branding</li>
+                        <li>Frontend</li>
+                        <li>Backend</li>
+                        <li>GenAI Integration</li>
                         <li>Content Strategy</li>
-                        <li>Platform Integration</li>
-                        <li>Brand Voice & Identity</li>
+                        <li>Cross-Platform Integration</li>
                     </ul>
                 </motion.li>
             </ul>

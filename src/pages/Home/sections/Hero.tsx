@@ -28,13 +28,7 @@ const Hero = () => {
                 <motion.div
                     initial={{ translateY: "100%", opacity: 0 }}
                     animate={{ translateY: 0, opacity: 1 }}>
-                    Empowering trades.
-                </motion.div>
-                <motion.div
-                    initial={{ translateY: "100%", opacity: 0 }}
-                    animate={{ translateY: 0, opacity: 1 }}
-                    transition={{ delay: 0.15 }}>
-                    Advancing peace.
+                    Empowering businesses to make an impact.
                 </motion.div>
                 <motion.div
                     initial={{ translateY: "100%", opacity: 0 }}
@@ -47,7 +41,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1 }}>
-                Today, we help trades and service professionals build an online presence. Tomorrow, we help community-focused missions do the same.
+                We help people and businesses build an online presence that matters. One project at a time, we’re working to make a real, positive impact in this world.
             </motion.p>
             <motion.div
                 initial={{ translateY: "200%", opacity: 0 }}

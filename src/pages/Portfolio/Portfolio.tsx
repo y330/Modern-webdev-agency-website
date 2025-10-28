@@ -22,29 +22,41 @@ const Portfolio = () => {
                 </motion.h2>
                 <motion.div className="portfolio-notice">
                     <p>
-                        <strong>Notice:</strong> We are currently working on several exciting projects. This section will be updated soon to showcase new work. Stay tuned for updates!
+                        <strong>Notice:</strong> We are currently working on several exciting projects. Stay tuned for updates!
                     </p>
                 </motion.div>
                 <ul className="projects">
                     <Project
-                        title="HVAC 4U"
-                        type="Website"
-                        image="/Images/construction.png"
+                        title="Actualize Apparel"
+                        type="Ecommerce"
+                        image="/Images/actualize-merch-store.png"
+                        desc="A Community For Young Entrepreunial Men In Toronto Who Want To Plug Into A Brotherhood & Become Their Best Self"
+                        link="actualize.club/apparel"
                         i={0}
                         inDev
                     />
                     <Project
-                        title="Premium Paint GTA"
+                        title="Miami Strong Gym"
                         type="Website"
-                        image="/Images/construction.png"
+                        image="/Images/miami-strong-gym.png"
+                        desc="Aesthetic gym landing page."
+                        link="https://gym-website-five-gold.vercel.app/"
                         i={1}
-                        inDev
-
+                    />
+                    <Project
+                        title="React Portfolio Website"
+                        type="Website"
+                        image="/Images/glass-react-portfolio.png"
+                        desc="Modern portfolio website with a gorgeous glass morphism design and sleek animations."
+                        link="https://yonah.vercel.app/"
+                        i={1}
                     />
                     <Project
                         title="Coming soon"
                         type="Website"
                         image="/Images/construction.png"
+                        desc=""
+                        link="#"
                         i={2}
                         inDev
                     />
@@ -54,7 +66,7 @@ const Portfolio = () => {
     );
 };
 
-const Project = ({ title, type, image, inDev, i }: { title: string; type: string; image: string; inDev?: boolean; i: number }) => {
+const Project = ({ title, type, image, desc, link, inDev, i }: { title: string; type: string; image: string; desc: string; link: string; inDev?: boolean; i: number }) => {
     return (
         <li className="project">
             <motion.div
@@ -62,10 +74,11 @@ const Project = ({ title, type, image, inDev, i }: { title: string; type: string
                 initial={{ opacity: 0, translateY: "20%" }}
                 animate={{ opacity: 1, translateY: 0 }}
                 transition={{ delay: 0.2 * (i + 1) }}>
-                <img
-                    src={image}
-                    alt={title}
-                />
+                <a href={link}>
+                    <img
+                        src={image}
+                        alt={title} />
+                </a>
             </motion.div>
             <div className="text">
                 <motion.h4 className="title"
@@ -81,6 +94,14 @@ const Project = ({ title, type, image, inDev, i }: { title: string; type: string
                     {type}
                 </motion.p>
                 {inDev && <span className="tag">In development</span>}
+            </div>
+            <div className="project-description">
+                <motion.p className="type"
+                    initial={{ opacity: 0, translateY: "100%" }}
+                    animate={{ opacity: 1, translateY: 0 }}
+                    transition={{ delay: 0.2 * (i + 3) }}>
+                    {desc}
+                </motion.p>
             </div>
         </li>
     );

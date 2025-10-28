@@ -16,7 +16,8 @@ const Footer = () => {
                     </Link>
 
                     <p>
-                        Today, we help trades and service professionals build an online presence. Tomorrow, we help community-focused missions do the same.
+                        We help people and businesses build an online presence that matters. One project at a time, we’re working to make a real, positive impact in this world.
+
                     </p>
                 </div>
                 <div className="links">
@@ -24,7 +25,7 @@ const Footer = () => {
                     <RouterLink to='/booking' variant='link'>Chat With Us</RouterLink>
                     <RouterLink to='/start' variant='link'>Get Started</RouterLink>
                     <RouterLink to='/portfolio' variant='link'>Portfolio</RouterLink>
-                    <RouterLink to='/pricing' variant='link'>Pricing</RouterLink>
+                    {/* <RouterLink to='/pricing' variant='link'>Pricing</RouterLink> */}
                     <RouterLink to='/about' variant='link'>About Us</RouterLink>
                     <RouterLink to='/contact' variant='link'>Contact</RouterLink>
                 </div>

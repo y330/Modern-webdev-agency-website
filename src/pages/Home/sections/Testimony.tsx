@@ -28,7 +28,7 @@ const Testimony = () => {
                     hidden: { opacity: 0, translateY: "100%" }
                 }}
                 className="quote">
-                    Thank you World Peace Web Services! Saved me the headache of dealing with updating my website.
+                Faith is taking the first step even when you don't see the whole staircase.
             </motion.span>
             <motion.span
                 animate={controls}
@@ -38,7 +38,7 @@ const Testimony = () => {
                     hidden: { opacity: 0, translateY: "100%" }
                 }}
                 className="author">
-                – J. Ross
+                – Martin Luther King Jr.
             </motion.span>
         </section>
     );

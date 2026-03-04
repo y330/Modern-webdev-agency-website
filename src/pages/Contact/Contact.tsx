@@ -4,7 +4,7 @@ import { Anchor, AnimatedPage, Button } from '../../components';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { MdEmail } from 'react-icons/md';
+import { MdEmail, MdLocalPhone } from 'react-icons/md';
 
 const Contact = () => {
 
@@ -50,6 +50,15 @@ const Contact = () => {
                         <div className="emailtext">
                             <h4>Email</h4>
                             <Anchor variant='link' href='mailto:avivyonah@gmail.com'>avivyonah@gmail.com</Anchor>
+                        </div>
+                    </motion.div>
+                    <motion.div className="email" initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
+                        <div className="icon">
+                            <MdLocalPhone />
+                        </div>
+                        <div className="emailtext">
+                            <h4>Phone</h4>
+                            <Anchor variant='link' href='tel:+1-647-975-7192'>(647)-975-7192</Anchor>
                         </div>
                     </motion.div>
                 </div>

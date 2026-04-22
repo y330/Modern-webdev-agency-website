@@ -22,7 +22,7 @@ const About = () => {
                     <motion.h3 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>What do I believe?</motion.h3>
 
                     <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
-                        I believe the web should be an experience, not just a destination. With a passion for combining creative technology with clean design, I build websites that feel as good as they function. Whether I am building a custom portfolio or a complex web application, I am dedicated to delivering unique and immersive experiences.
+                        I believe the web should be an experience, not just a destination. With a passion for combining creative technology and cinematic design, I build websites that feel as good as they function. Whether I am building a custom portfolio or a complex web application, I am dedicated to delivering unique and immersive experiences.
                     </motion.p>
                 </div>
                 <div className="about">

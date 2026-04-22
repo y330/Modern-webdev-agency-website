@@ -27,11 +27,15 @@ const About = () => {
                 </div>
                 <div className="about">
                     <motion.div className="member" initial={{ opacity: 0, translateX: "-100%" }} animate={{ opacity: 1, translateX: 0 }} transition={{ delay: 0.8 }}>
-                        <img src="/Images/Me.png" alt="Photo of team member" />
-                        <h3>Yonah Aviv</h3>
-                        <p>President</p>
+                        <div className="portrait-wrapper">
+                            <img src="/Images/Me.png" alt="Yonah Aviv - Founder" />
+                        </div>
+                        <div className="identity">
+                            <h3>Yonah Aviv</h3>
+                            <p className="title">Founder</p>
+                        </div>
                     </motion.div>
-                    <div className="text">
+                    <div className="text-content">
                         <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.4 }}>About Me</motion.h2>
                         <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.6 }}>
                             I’m a detail-driven software developer and digital creator with over five years of experience. Combining expertise in computer science and psychology, I build websites and platforms that feel as good as they function, focusing on fluid animations, engaging user interfaces, and premium brand experiences.
@@ -44,7 +48,7 @@ const About = () => {
                 <div className="contact">
                     <h2>Contact Me</h2>
                     <p>I’m always open to new projects and collaborations. If you’re interested in working with me, don’t hesitate to reach out.</p>
-                    <RouterLink to='/contact' variant='primary'>Get in Touch</RouterLink>
+                    <RouterLink to='/connect' variant='primary'>Get in Touch</RouterLink>
                 </div>
             </div>
         </AnimatedPage>

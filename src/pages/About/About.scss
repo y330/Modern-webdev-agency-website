@@ -47,70 +47,109 @@
         }
     }
 
-    .about{
+    .about {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6rem;
+        margin-top: 4rem;
 
-        .member{
-            flex: 1;
+        .member {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            max-width: 30vh;
+            align-items: flex-start;
+            gap: 2rem;
+            width: 100%;
 
-            img{
+            .portrait-wrapper {
                 width: 100%;
-                aspect-ratio: 1/1;
-                border-radius: 50%;
-                object-fit: cover;
-                margin-bottom: 1rem;
-                border: 2px solid theme.$primary;
-                padding: 4px;
+                max-width: 450px;
+                aspect-ratio: 4 / 5;
+                overflow: hidden;
+                background-color: theme.$hover-grey;
+                border-radius: 4px; // Sharp but slightly softened corners
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(10%) contrast(105%); // Subtle editorial treatment
+                    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
             }
 
-            h3{
-                text-align: center;
-                font-size: clamp(1.5rem, 2vw, 2rem);
-                color: theme.$text-header;
+            .identity {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+
+                h3 {
+                    text-align: left;
+                    font-size: clamp(2rem, 3vw, 2.5rem);
+                    color: theme.$text-header;
+                    font-weight: 800; // Strong typographic hierarchy
+                    letter-spacing: -0.02em;
+                    margin: 0;
+                }
+
+                .title {
+                    text-align: left;
+                    color: theme.$primary;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    letter-spacing: 0.15em;
+                }
             }
         }
 
-        .text{
-            flex: 2;
+        .text-content {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
-            max-width: 60ch;
+            gap: 2rem;
+            max-width: 70ch;
+            margin-top: 2rem; // Spatial breathing room from the identity block
 
-            h2{
-                font-size: clamp(1.5rem, 2vw, 2rem);
+            h2 {
+                font-size: clamp(1.5rem, 2.5vw, 2.2rem);
                 color: theme.$text-header;
+                font-weight: 700;
+                position: relative;
+                padding-bottom: 1rem;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 40px;
+                    height: 2px;
+                    background-color: theme.$primary;
+                }
             }
 
-            p{
-                font-size: clamp(1rem, 1.5vw, 1.2rem);
+            p {
+                font-size: clamp(1.1rem, 1.2vw, 1.3rem);
+                line-height: 1.7;
+                color: theme.$text;
             }
         }
 
         @media screen and (max-width: 768px) {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 5vh;
+            gap: 4rem;
 
-            .member{
-                width: 100%;
-                align-items: flex-start;
-                
-                h3, p {
-                    text-align: left;
+            .member {
+                .portrait-wrapper {
+                    max-width: 100%;
                 }
             }
 
-            .text{
-                width: 100%;
-                text-align: left;
+            .text-content {
+                margin-top: 1rem;
             }
         }
     }

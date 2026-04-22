@@ -42,7 +42,7 @@ const QuickGetStarted = () => {
                 }}>
                 <RouterLink
                     variant="primary"
-                    to="/contact"
+                    to="/connect"
                     className="pulsating">
                     Connect With Me
                 </RouterLink>

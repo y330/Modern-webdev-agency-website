@@ -146,7 +146,7 @@ const WhyUs = () => {
                         hidden: { opacity: 0, translateY: "100%" }
                     }}>
                     <RouterLink
-                        to="/contact"
+                        to="/booking"
                         variant="white">
                         Connect With Me
                     </RouterLink>

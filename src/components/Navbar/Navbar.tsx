@@ -28,7 +28,7 @@ const Navbar = () => {
                         src="/Images/Logo.webp"
                         alt=""
                     />
-                    <h2>World Peace Web Services</h2>
+                    <h2>Aviv Digital</h2>
                 </div>
             </Link>
             <Nav />

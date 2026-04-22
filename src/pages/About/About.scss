@@ -49,9 +49,11 @@
             img{
                 width: 100%;
                 aspect-ratio: 1/1;
-                border-radius: theme.$radius;
+                border-radius: 50%;
                 object-fit: cover;
                 margin-bottom: 1rem;
+                border: 2px solid theme.$primary;
+                padding: 4px;
             }
 
             h3{

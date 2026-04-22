@@ -79,38 +79,42 @@
                     white-space: nowrap; // Prevent word wrap
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    margin: 0;
                 }
-                .type {
-                    font-size: clamp(0.5rem, 3vw, 1rem); // Responsive: small on mobile, up to 1.5rem
-                }
-                .tag {
-                    margin-left: auto;
-                    font-size: clamp(0.7rem, 2vw, 1rem); // Responsive: small on mobile, up to 1.5rem
 
-                    background-color: theme.$secondary-bg;
-                    color: theme.$secondary;
-                    padding: 0.25rem 1rem;
-                    border-radius: theme.$radius;
-                    white-space: nowrap; // Prevent word wrap
+                .tags {
+                    display: flex;
+                    gap: 0.5rem;
+                    margin-left: auto;
+                    align-items: center;
+
+                    .tag {
+                        background-color: theme.$secondary-bg;
+                        color: theme.$secondary;
+                        padding: 0.2rem 1rem;
+                        border-radius: 2rem;
+                        font-size: 0.75rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        white-space: nowrap;
+
+                        &.collaborative {
+                            background-color: theme.$primary-bg;
+                            color: theme.$primary;
+                        }
+                    }
                 }
             }
         }
 
         @media screen and (max-width: 1200px) {
             grid-template-columns: 1fr;
-
-            .project {
-                margin-top: 0 !important;
-            }
         }
     }
 
-    .portfolio-notice,
     .projects .project {
-        max-width: 500px; // or whatever width you want
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
         box-sizing: border-box;
     }
     // Prevent project cards from exceeding viewport width on very small screens

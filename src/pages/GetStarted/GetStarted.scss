@@ -17,25 +17,7 @@
         font-size: clamp(1rem, 5vw, 2.5rem);
         color: theme.$text-header;
         text-align: center;
-    }
-    .getstarted-info {
-        background: theme.$hover-grey;
-        color: theme.$text;
-        border-radius: theme.$radius;
-        padding: 1.5rem 2rem;
-        margin: 1.5rem 0;
-        font-size: 1.1rem;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-        border-left: 4px solid theme.$primary;
-
-        a {
-            color: theme.$primary;
-            text-decoration: underline;
-            transition: color 0.2s;
-            &:hover {
-                color: color.adjust(theme.$primary, $lightness: -10%);
-            }
-        }
+        margin-bottom: 2rem;
     }
     .getstarted-form {
         max-width: 700px;
@@ -156,11 +138,6 @@
     .getstarted-screen {
         padding-inline: 0 !important;
         padding-bottom: 0 !important;
-        .getstarted-info {
-            margin: 2rem;
-            padding: 1rem;
-            font-size: clamp(0.9rem, 2vw, 1.1rem);
-        }
         .getstarted-form {
             border-radius: 0;
             box-shadow: none;

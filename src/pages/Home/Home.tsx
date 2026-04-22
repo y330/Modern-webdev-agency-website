@@ -3,7 +3,7 @@ import "./Home.scss";
 import { Helmet } from "react-helmet-async";
 import Hero from "./sections/Hero";
 import WhyUs from "./sections/WhyUs";
-import Services from "./sections/Services";
+import Capabilities from "./sections/Capabilities";
 import PortfolioShowcase from "./sections/PortfolioShowcase";
 import Testimony from "./sections/Testimony";
 import FeaturedPricing from "./sections/FeaturedPricing";
@@ -14,20 +14,20 @@ const Home = () => {
     return (
         <AnimatedPage>
             <Helmet>
-                <title>World Peace Web Services – Digital Impact for Trades & Communities</title>
+                <title>Aviv Digital – Premium Interactive Digital Experiences</title>
                 <meta
                     name="description"
-                    content="We craft purpose-driven websites that help trades and service professionals grow online with trust, clarity, and local impact—because peace begins with visibility."
+                    content="We craft purpose-driven, premium digital experiences that help modern brands grow online with stunning interactivity, fluid animations, and high-end design."
                 />
             </Helmet>
             <div className="home-screen">
                 <Hero />
                 <QuickAbout />
-                <Services />
+                <Capabilities />
                 <WhyUs />
                 <PortfolioShowcase />
-                <Testimony />
-                <FeaturedPricing />
+                {/* <Testimony /> */}
+                {/* <FeaturedPricing /> */}
                 <QuickContact />
             </div>
         </AnimatedPage>

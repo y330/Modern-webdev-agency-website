@@ -11,7 +11,7 @@ const Footer = () => {
                     <Link style={{ textDecoration: "none" }} to="/">
                         <div className="logo">
                             <img src='/Images/Logo.webp' alt='' />
-                            <h2>World Peace Web Services</h2>
+                            <h2>Aviv Digital</h2>
                         </div>
                     </Link>
 
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="separator"></div>
-            <p className='copyright'>Copyright © 2025 World Peace Web Services</p>
+            <p className='copyright'>Copyright © 2025 Aviv Digital</p>
         </footer>
     )
 }

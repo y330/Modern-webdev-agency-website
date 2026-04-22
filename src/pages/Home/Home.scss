@@ -3,7 +3,6 @@
 .home-screen {
     display: flex;
     flex-direction: column;
-    gap: 10vh;
 
     .hero {
         display: flex;
@@ -161,164 +160,167 @@
         }
     }
 
-    .services {
+    .capabilities-section {
+        padding: 12vh 10vw;
+        background: #ffffff;
         overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
 
-        .text {
-            padding: 0 10vw;
-        }
-
-        .options {
-            padding: 0 10vw;
+        .container {
             display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 2vh;
+            flex-direction: column;
+            gap: 6rem;
 
-            .option {
-                list-style-type: none;
-
-                button {
-                    font-size: clamp(0.75rem, 2vw, 1rem);
-                }
-            }
-
-            .buttons {
+            .main-feature {
                 display: flex;
-                margin-left: auto;
+                align-items: center;
+                gap: 5vw;
+                justify-content: space-between;
 
-                &:not(:last-child) {
-                    margin-left: auto;
-                }
-
-                button {
-                    padding: 0.25rem;
-                    border: none;
-                    background-color: transparent;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    cursor: pointer;
-                    transition: color 0.2s;
-
-                    &:hover {
-                        color: theme.$primary;
-                    }
-
-                    &:disabled {
-                        opacity: 0.5;
-                        cursor: default;
-
-                        &:hover {
-                            color: theme.$text;
-                            opacity: 0.5;
-                        }
-                    }
-
-                    svg {
-                        width: 2rem;
-                        height: 2rem;
-                    }
-                }
-            }
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(4, 80vmin);
-            gap: 5vmin;
-            padding: 0 10vw 2vh 10vw;
-            margin-top: 2vh;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            scroll-snap-type: x mandatory;
-            scroll-padding-left: 10vw;
-
-            .card {
-                scroll-snap-align: start;
-                display: inline-flex;
-                flex-direction: column;
-                gap: 1rem;
-                width: 80vmin;
-                height: 100%;
-                padding: 8vmin;
-
-                background-color: white;
-                border-radius: theme.$radius;
-                border: 1px solid theme.$border;
-                box-shadow: theme.$soft-shadow;
-
-                transform-origin: left;
-                white-space: normal;
-
-                .top {
+                .text-content {
+                    flex: 1.2;
                     display: flex;
                     flex-direction: column;
-                    gap: 1rem;
+                    gap: 1.5rem;
 
-                    h4 {
+                    h2 {
+                        color: theme.$primary;
+                        font-size: 1.1rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.15em;
+                        font-weight: 700;
+                    }
+
+                    h3 {
                         color: theme.$text-header;
-                        font-size: clamp(1.25rem, 3vw, 2rem);
+                        font-size: clamp(2rem, 4vw, 3.5rem);
+                        line-height: 1.1;
+                        font-weight: 700;
                     }
 
-                    .icon {
-                        width: 4rem;
-                        height: 4rem;
-                        border-radius: theme.$radius;
-                        background-color: theme.$primary;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        color: white;
-
-                        svg {
-                            width: 2rem;
-                            height: 2rem;
-                        }
+                    p {
+                        color: theme.$text;
+                        font-size: clamp(1rem, 1.2vw, 1.25rem);
+                        line-height: 1.6;
+                        max-width: 55ch;
                     }
 
-                    @media screen and (max-width: 768px) {
-                        flex-direction: row;
-                        align-items: flex-end;
+                    .feature-list {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 1rem;
+                        list-style: none;
+                        margin-top: 1rem;
 
-                        .icon {
-                            width: 3rem;
-                            height: 3rem;
+                        li {
+                            font-size: 1rem;
+                            color: theme.$text-header;
+                            display: flex;
+                            align-items: center;
+                            gap: 0.75rem;
+                            font-weight: 500;
 
                             svg {
-                                width: 1.5rem;
-                                height: 1.5rem;
+                                color: theme.$primary;
+                                font-size: 1.2rem;
                             }
                         }
                     }
                 }
 
-                ul {
+                .visual {
+                    flex: 0.8;
                     display: flex;
-                    flex-wrap: wrap;
-                    gap: 1rem;
-                    list-style: none;
-                    margin-top: 1rem;
+                    justify-content: center;
+                    align-items: center;
 
-                    li {
-                        font-size: clamp(0.65rem, 2vw, 1rem);
+                    .icon-wrapper {
+                        width: clamp(150px, 20vw, 300px);
+                        aspect-ratio: 1;
+                        background: theme.$primary-bg;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: clamp(4rem, 8vw, 8rem);
+                        color: theme.$primary;
+                        position: relative;
 
-                        &::before {
-                            content: "✓";
-                            color: theme.$primary;
-                            font-weight: bold;
-                            display: inline-block;
-                            margin-right: 1vw;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            inset: -20px;
+                            border: 1px solid theme.$primary;
+                            border-radius: 50%;
+                            opacity: 0.2;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 968px) {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 4rem;
+
+                    .text-content {
+                        align-items: center;
+                        .feature-list {
+                            justify-content: center;
                         }
                     }
                 }
             }
 
-            &::-webkit-scrollbar {
-                display: none;
+            .secondary-features {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 3rem;
+
+                .sub-card {
+                    background: #fafafa;
+                    padding: 3rem;
+                    border-radius: theme.$radius;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                    border: 1px solid transparent;
+
+                    &:hover {
+                        transform: translateY(-3px);
+                        background: #ffffff;
+                        border-color: theme.$border;
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+                    }
+
+                    .icon-box {
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        background: white;
+                        color: theme.$primary;
+                        border-radius: theme.$radius;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.8rem;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+                    }
+
+                    h4 {
+                        font-size: 1.5rem;
+                        color: theme.$text-header;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        color: theme.$text;
+                        line-height: 1.6;
+                        font-size: 1.05rem;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                }
             }
         }
     }
@@ -394,8 +396,8 @@
 
     .testimony {
         background-color: theme.$secondary-bg;
-        padding: 5vh 5vw;
-        margin: 0 5vw;
+        padding: 8vh 5vw;
+        margin: 10vh 5vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -429,6 +431,7 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        margin-top: 10vh;
 
         h2,
         h3 {
@@ -457,53 +460,82 @@
         }
         .projects {
             display: grid;
-            // grid-template-columns: repeat(2, minmax(300px, 1fr));
-            // gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
             margin-top: 5vh;
             padding-bottom: 8rem;
-            width: 50vw;
+            width: 80vw;
 
             .project {
                 width: 100%;
-                aspect-ratio: 16 / 9;
                 display: flex;
                 flex-direction: column;
-                gap: 2rem;
+
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
 
                 img {
                     width: 100%;
-                    height: 100%;
+                    aspect-ratio: 16 / 9;
                     object-fit: cover;
                     border: 1px solid theme.$border;
                     box-shadow: theme.$soft-shadow;
                     border-radius: theme.$radius;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                    &:hover {
+                        transform: translateY(-5px);
+                        box-shadow: theme.$medium-shadow;
+                    }
                 }
 
                 .text {
                     display: flex;
                     align-items: center;
-                    gap: 2vw;
+                    justify-content: space-between;
+                    gap: 1rem;
 
-                    .tag {
-                        margin-left: auto;
-                        background-color: theme.$secondary-bg;
-                        color: theme.$secondary;
-                        padding: 0.25rem 1rem;
-                        border-radius: theme.$radius;
+                    h4 {
+                        font-size: clamp(1.2rem, 2vw, 1.5rem);
+                        color: theme.$text-header;
+                        margin: 0;
+                    }
+
+                    .tags {
+                        display: flex;
+                        gap: 0.5rem;
+                        align-items: center;
+
+                        .tag {
+                            background-color: theme.$secondary-bg;
+                            color: theme.$secondary;
+                            padding: 0.2rem 1rem;
+                            border-radius: 2rem;
+                            font-size: 0.75rem;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            letter-spacing: 0.05em;
+
+                            &.collaborative {
+                                background-color: theme.$primary-bg;
+                                color: theme.$primary;
+                            }
+                        }
                     }
                 }
             }
 
             @media screen and (max-width: 1200px) {
-                width: 50vw;
-            }
-
-            @media screen and (max-width: 1024px) {
-                // grid-template-columns: repeat(1, minmax(300px, 1fr));
-                width: 50vw;
+                width: 90vw;
+                gap: 2rem;
             }
 
             @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
                 width: 100%;
             }
         }
@@ -614,6 +646,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-top: 10vh;
         margin-bottom: 16vh;
 
         > div {

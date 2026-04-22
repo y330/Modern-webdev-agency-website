@@ -18,7 +18,7 @@ const AboutHighlight = () => {
                     visible: { opacity: 1, translateX: 0 },
                     hidden: { opacity: 0, translateX: "-50%" }
                 }}>
-                We specialize in websites that make life easier, work more efficient, and missions more impactful
+                We specialize in immersive digital experiences that elevate modern brands.
             </motion.h2>
             <div className="bottom">
                 <motion.p
@@ -28,7 +28,7 @@ const AboutHighlight = () => {
                         visible: { opacity: 1 },
                         hidden: { opacity: 0 }
                     }}>
-                    We’re passionate about working on missions that serve people and create positive change. But whether your goal is impact or simply getting your business online, we’re here to help.
+                    We blend high-end design with interactive engineering to create websites that don't just exist — they inspire. From cinematic portfolios to complex web applications, we are committed to delivering digital excellence.
                 </motion.p>
                 <RouterLink
                     variant="link"

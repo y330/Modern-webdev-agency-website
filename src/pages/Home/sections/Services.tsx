@@ -22,10 +22,10 @@ const Services = () => {
             className="services"
             id="services">
             <div className="text">
-                <h2>Our Services</h2>
+                <h2>Our Capabilities</h2>
                 <h3>
-                    Boost your business
-                    <br /> with our solutions
+                    Elevating your brand with
+                    <br /> cinematic digital experiences
                 </h3>
             </div>
             <ul className="options">
@@ -34,7 +34,7 @@ const Services = () => {
                         variant="choice"
                         className={serviceIndex === 0 ? "active" : ""}
                         onClick={() => setServiceIndex(0)}>
-                        Trade/Service
+                        Cinematic Web
                     </Button>
                 </li>
                 <li className="option">
@@ -42,7 +42,7 @@ const Services = () => {
                         variant="choice"
                         className={serviceIndex === 1 ? "active" : ""}
                         onClick={() => setServiceIndex(1)}>
-                        E-commerce
+                        Digital Products
                     </Button>
                 </li>
                 <li className="option">
@@ -50,7 +50,7 @@ const Services = () => {
                         variant="choice"
                         className={serviceIndex === 2 ? "active" : ""}
                         onClick={() => setServiceIndex(2)}>
-                        Social Media
+                        Creative Tech
                     </Button>
                 </li>
                 <li className="buttons">
@@ -83,22 +83,18 @@ const Services = () => {
                         <div className="icon">
                             <MdDesignServices />
                         </div>
-                        <h3>Trade/Service</h3>
+                        <h3>Cinematic Web</h3>
                     </div>
                     <p>
-                        We build custom labnding pages for trades and service businesses that are easy to navigate, mobile-friendly, and tailored to real-world clients. Our designs help customers find what they need quickly so your work speaks for itself online.
+                        We craft immersive, interactive web experiences that blend high-end design with seamless motion. Our focus is on storytelling and cinematic aesthetics that captivate audiences.
                     </p>
                     <ul>
-                        <li>Concept</li>
-                        <li>Layout</li>
-                        <li>Design</li>
-                        <li>Icons</li>
-                        <li>Animations</li>
-                        <li>Logo Design</li>
-                        <li>Branding</li>
-                        <li>Hosting</li>
-                        <li>Domain</li>
-                        <li>SEO</li>
+                        <li>Art Direction</li>
+                        <li>UI/UX Design</li>
+                        <li>Motion Graphics</li>
+                        <li>Interactive Design</li>
+                        <li>Brand Identity</li>
+                        <li>SEO Optimization</li>
                     </ul>
                 </motion.li>
                 <motion.li
@@ -113,17 +109,16 @@ const Services = () => {
                         <div className="icon">
                             <MdCode />
                         </div>
-                        <h3>E-commerce</h3>
+                        <h3>Digital Products</h3>
                     </div>
-                    <p>We build powerful e-commerce websites designed to help your trade or service business sell with ease, scale with confidence, and connect with customers around the clock. From clean product layouts to secure checkout systems, we focus on performance, trust, and results.</p>
+                    <p>We build premium e-commerce platforms and custom web applications designed for scale and performance. We blend conversion-driven design with robust engineering.</p>
                     <ul>
-                        <li>Frontend</li>
-                        <li>API</li>
-                        <li>Database</li>
-                        <li>Authentication</li>
-                        <li>Hosting</li>
-                        <li>Domain</li>
-                        <li>SEO</li>
+                        <li>Custom E-commerce</li>
+                        <li>Web Applications</li>
+                        <li>Platform Engineering</li>
+                        <li>API Integrations</li>
+                        <li>Performance Tuning</li>
+                        <li>Security Audits</li>
                     </ul>
                 </motion.li>
                 <motion.li
@@ -138,16 +133,16 @@ const Services = () => {
                         <div className="icon">
                             <MdDeveloperMode />
                         </div>
-                        <h3>Software</h3>
+                        <h3>Creative Tech</h3>
                     </div>
-                    <p>Need help with another kind of website or custom software? We’re happy to support any project, especially those built to serve people or make life easier. Let’s talk.</p>
+                    <p>Pushing the boundaries of the web with custom experimental tech, AI-driven integrations, and tailored automation that streamlines your digital operations.</p>
                     <ul>
-                        <li>Purposeful Branding</li>
-                        <li>Frontend</li>
-                        <li>Backend</li>
                         <li>GenAI Integration</li>
+                        <li>Custom Automation</li>
+                        <li>Experimental Web</li>
+                        <li>Backend Systems</li>
                         <li>Content Strategy</li>
-                        <li>Cross-Platform Integration</li>
+                        <li>Workflow Design</li>
                     </ul>
                 </motion.li>
             </ul>

@@ -8,8 +8,8 @@ const About = () => {
     return (
         <AnimatedPage>
             <Helmet>
-                <title>About Us – We Are World Peace Web Services</title>
-                <meta name="description" content="We are World Peace Web Services. We're a company offering services in web design, web development, and mobile applications." />
+                <title>About Us – We Are Aviv Digital</title>
+                <meta name="description" content="Aviv Digital is a Toronto-based creative studio specializing in cinematic web experiences, digital products, and creative engineering." />
             </Helmet>
             <div className='about-screen'>
                 <div className="hero">
@@ -17,24 +17,27 @@ const About = () => {
                     <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>
                         What we do</motion.h2>
                     <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
-                        We’re a Toronto-based web development studio dedicated to helping local trades and service businesses thrive online. Get a purpose-built website that enhances your presence on Google Maps and helps your business stand out locally.
+                        We’re a Toronto-based digital studio dedicated to crafting immersive, interactive web experiences. We build premium, cinematic websites and applications that captivate audiences and elevate modern brands.
                     </motion.p>
                     <motion.h3 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>What do we believe?</motion.h3>
 
                     <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
-                        At World Peace Web Services, we believe that technology can uplift humanity. We’re passionate about using our skills to create websites and applications that not only look great but also make a positive impact on the world. Whether it’s helping a local business grow or supporting a non-profit organization, we’re committed to making a difference through technology.
+                        At Aviv Digital, we believe the web should be an experience, not just a destination. We’re passionate about pushing the boundaries of creative technology, blending high-end design with seamless interactivity. Whether we are building a dynamic portfolio or a complex web application, we are committed to delivering digital excellence.
                     </motion.p>
                 </div>
                 <div className="about">
                     <motion.div className="member" initial={{ opacity: 0, translateX: "-100%" }} animate={{ opacity: 1, translateX: 0 }} transition={{ delay: 0.8 }}>
                         <img src="/Images/Me.png" alt="Photo of team member" />
-                        <h3>Yonah</h3>
-                        <p>Founder</p>
+                        <h3>Yonah Aviv</h3>
+                        <p>Chief Website Coordinator</p>
                     </motion.div>
                     <div className="text">
                         <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.4 }}>About Me</motion.h2>
                         <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.6 }}>
-                            I’m a detail-driven software developer with over five years of experience building software that matters. Combining expertise in computer science and psychology, I build websites and platforms that feel as good as they function—designed to uplift trades, professionals, and local communities.
+                            I’m a detail-driven software developer and digital creator with over five years of experience. Combining expertise in computer science and psychology, I build websites and platforms that feel as good as they function — focusing on fluid animations, engaging user interfaces, and premium brand experiences.
+                        </motion.p>
+                        <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.8 }}>
+                            Outside of building digital experiences, my main creative outlet is music — I play guitar and produce my own songs. I also find balance through fitness, meditation, and simply enjoying the ride.
                         </motion.p>
                     </div>
                 </div>

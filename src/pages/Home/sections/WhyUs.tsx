@@ -33,7 +33,7 @@ const WhyUs = () => {
                     visible: { opacity: 1, translateY: 0 },
                     hidden: { opacity: 0, translateY: "100%" }
                 }}>
-                Only pay for the time you need and get high-quality results
+                Experience unparalleled digital craftsmanship and results 
                 <br /> that exceed expectations.
             </motion.p>
             <div
@@ -56,7 +56,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        Risk-Free
+                        Excellence
                     </motion.h3>
                     <motion.p
                         animate={midControls}
@@ -65,7 +65,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        You only pay when you're completely satisfied. No upfront costs, no surprises.
+                        We deliver world-class digital experiences with a focus on uncompromising quality and cinematic detail.
                     </motion.p>
                 </div>
                 <div className="item">
@@ -114,7 +114,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        Local
+                        Modern
                     </motion.h3>
                     <motion.p
                         animate={midControls}
@@ -123,7 +123,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        Based in Downtown Toronto, we’re tuned in to what helps local businesses thrive.
+                        Based in Downtown Toronto, we create modern digital experiences that captivate audiences and elevate brands.
                     </motion.p>
                 </div>
             </div>

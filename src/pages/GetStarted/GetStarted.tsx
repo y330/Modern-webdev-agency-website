@@ -10,56 +10,18 @@ import "./GetStarted.scss";
 
 const questions = [
     {
-        label: "What specific trade services do you offer, and what problems do they solve for your customers?",
-        placeholder:
-            "e.g. Plumbing repairs, electrical installations, carpentry, etc. What common issues do you address?",
-        name: "services",
-    },
-    {
-        label: "Who are your typical customers, and what are their biggest concerns when hiring a tradesperson?",
-        placeholder:
-            "e.g. Homeowners, small businesses, or landlords. Are they looking for reliability, affordability, or quick service?",
-        name: "customers",
-    },
-    {
-        label: "What makes your trade business stand out from competitors in your area?",
-        placeholder:
-            "e.g. Do you offer faster response times, affordable pricing, or specialized expertise?",
-        name: "unique",
-    },
-    {
-        label: "Do you have any certifications, licenses, or guarantees that build trust with your customers?",
-        placeholder:
-            "e.g. Are you licensed, insured, or do you offer warranties on your work?",
-        name: "certifications",
-    },
-    {
-        label: "What areas or regions do you serve, and do you offer emergency or after-hours services?",
-        placeholder:
-            "e.g. Are you focused on local neighborhoods or broader regions? Do you provide 24/7 service?",
-        name: "regions",
-    },
-    {
-        label: "What do your customers say about your work? Do you have testimonials or reviews to share?",
-        placeholder:
-            "e.g. Feedback from past clients. If you have a lot reviews on Google Maps, just write \"blank\"—we’ll handle it.",
-        name: "testimonials",
-    },
+        label: "Tell us about your project vision",
+        placeholder: "What are you looking to build? Mention any specific goals, inspirations, or requirements you have in mind.",
+        name: "projectVision",
+    }
 ];
 
 const GetStarted = () => {
     const [form, setForm] = useState({
-        services: "",
-        customers: "",
-        unique: "",
-        certifications: "",
-        regions: "",
-        testimonials: "",
         businessName: "",
         personalName: "",
-        googleMap: "",
-        phone: "",
         email: "",
+        projectVision: "",
     });
 
     const [submitting, setSubmitting] = useState(false);
@@ -72,27 +34,19 @@ const GetStarted = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Require all form fields to be filled
+        // Require name, email, and vision
         const requiredFields = [
-            "businessName",
             "personalName",
-            "phone",
             "email",
-            "googleMap",
-            "services",
-            "customers",
-            "unique",
-            "certifications",
-            "regions",
-            "testimonials"
+            "projectVision"
         ];
         const emptyField = requiredFields.find(field => !form[field as keyof typeof form].trim());
         if (emptyField) {
-            setSnackbar({ open: true, message: 'Please fill in all fields before submitting.', type: 'error' });
+            setSnackbar({ open: true, message: 'Please fill in all required fields.', type: 'error' });
             return;
         }
         setSubmitting(true);
-        console.log(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+        
         // Send form data to EmailJS
         emailjs
             .sendForm(
@@ -102,37 +56,30 @@ const GetStarted = () => {
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
             .then(() => {
-                setSnackbar({ open: true, message: 'Thank you for your answers! We will be in touch soon.', type: 'success' });
+                setSnackbar({ open: true, message: 'Thank you! We will be in touch soon.', type: 'success' });
                 setForm({
-                    services: '',
-                    customers: '',
-                    unique: '',
-                    certifications: '',
-                    regions: '',
-                    testimonials: '',
                     businessName: '',
                     personalName: '',
-                    googleMap: '',
-                    phone: '',
                     email: '',
+                    projectVision: '',
                 });
             })
             .catch(() => {
-                setSnackbar({ open: true, message: 'There was an error sending your answers. Please try again later.', type: 'error' });
+                setSnackbar({ open: true, message: 'Error sending message. Please try again.', type: 'error' });
             })
             .finally(() => setSubmitting(false));
     };
 
     // Format the email body for EmailJS
-    const formattedBody = `Business Name: ${form.businessName}\nPersonal Name: ${form.personalName}\nPhone: ${form.phone}\nEmail: ${form.email}\nGoogle Map Link: ${form.googleMap}\n\n1. What specific trade services do you offer, and what problems do they solve for your customers?\n${form.services}\n\n2. Who are your typical customers, and what are their biggest concerns when hiring a tradesperson?\n${form.customers}\n\n3. What makes your trade business stand out from competitors in your area?\n${form.unique}\n\n4. Do you have any certifications, licenses, or guarantees that build trust with your customers?\n${form.certifications}\n\n5. What areas or regions do you serve, and do you offer emergency or after-hours services?\n${form.regions}\n\n6. What do your customers say about your work? Do you have testimonials or reviews to share?\n${form.testimonials}`;
+    const formattedBody = `Project/Business: ${form.businessName}\nName: ${form.personalName}\nEmail: ${form.email}\n\nProject Vision:\n${form.projectVision}`;
 
     return (
         <>
             <Helmet>
-                <title>Get Started – Tell Us About Your Trade Business</title>
+                <title>Get Started – Tell Us About Your Project</title>
                 <meta
                     name="description"
-                    content="Answer a few questions to help us understand your trade business."
+                    content="Answer a few questions to help us understand your digital project."
                 />
             </Helmet>
             <section className="getstarted-screen">
@@ -141,16 +88,11 @@ const GetStarted = () => {
                     initial={{ opacity: 0, translateY: "100%" }}
                     animate={{ opacity: 1, translateY: 0 }}
                 >
-                    Tell us about your trade business
+                    Let's bring your project to life
                 </motion.h2>
-                <div className="getstarted-info">
-                    <p>
-                        With the information you provide below, our team will professionally write all the content for your website. This ensures your site accurately reflects your business and appeals to your ideal customers.
-                    </p>
-                </div>
                 <form className="getstarted-form" onSubmit={handleSubmit} ref={formRef}>
                     <h3 className="form-title">Send Us Your Details</h3>
-                    <p className="form-subheading">To best support world peace, please complete all fields in the form below.</p>
+                    <p className="form-subheading">To help us craft the perfect digital experience, please complete all fields below.</p>
                     <div className="input">
                         <div className="input-group">
                             <input
@@ -160,10 +102,9 @@ const GetStarted = () => {
                                 placeholder=" "
                                 value={form.businessName}
                                 onChange={handleChange}
-                                required
                                 autoComplete="off"
                             />
-                            <label htmlFor="businessName">Business Name</label>
+                            <label htmlFor="businessName">Project or Business Name</label>
                         </div>
                         <div className="input-group">
                             <input
@@ -176,19 +117,7 @@ const GetStarted = () => {
                                 required
                                 autoComplete="off"
                             />
-                            <label htmlFor="personalName">Your Name</label>
-                        </div>
-                        <div className="input-group">
-                            <input
-                                id="phone"
-                                name="phone"
-                                type="tel"
-                                placeholder=" "
-                                value={form.phone}
-                                onChange={handleChange}
-                                autoComplete="off"
-                            />
-                            <label htmlFor="phone">Phone Number</label>
+                            <label htmlFor="personalName">Your Name *</label>
                         </div>
                         <div className="input-group">
                             <input
@@ -198,21 +127,10 @@ const GetStarted = () => {
                                 placeholder=" "
                                 value={form.email}
                                 onChange={handleChange}
+                                required
                                 autoComplete="off"
                             />
-                            <label htmlFor="email">Email</label>
-                        </div>
-                        <div className="input-group">
-                            <input
-                                id="googleMap"
-                                name="googleMap"
-                                type="text"
-                                placeholder=" "
-                                value={form.googleMap}
-                                onChange={handleChange}
-                                autoComplete="off"
-                            />
-                            <label htmlFor="googleMap">Google Maps Link</label>
+                            <label htmlFor="email">Email *</label>
                         </div>
                     </div>
                     {questions.map((q, idx) => {

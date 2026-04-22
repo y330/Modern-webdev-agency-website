@@ -11,28 +11,37 @@ const PortfolioShowcase = () => {
             id="portfolio">
             <h2>Portfolio</h2>
             <h3>Explore some of our latest work</h3>
-            <div className="portfolio-notice">
+            {/* <div className="portfolio-notice">
                 <p>
                     <strong>Notice:</strong> We are currently working on several exciting projects. Stay tuned for updates!
                 </p>
-            </div>
+            </div> */}
             <ul className="projects">
                 <Project
-                    image="/Images/actualize-merch-store.png"
+                    image="/Images/projects/kultur-screenshot.png"
+                    title="Kulture Entertainment"
+                    category="Music Collective"
                     i={0}
                 />
+                <Project
+                    image="/Images/projects/actualize-summit.png"
+                    title="Actualize Summit"
+                    category="Event"
+                    coDeveloped
+                    i={1}
+                />
             </ul>
-            <RouterLink
+            {/* <RouterLink
                 to="/portfolio"
                 variant="link"
                 arrow>
                 See more projects
-            </RouterLink>
+            </RouterLink> */}
         </section>
     );
 };
 
-const Project = ({ image, i }: { image: string; i: number }) => {
+const Project = ({ image, title, category, coDeveloped, i }: { image: string; title: string; category: string; coDeveloped?: boolean; i: number }) => {
     const ref = useRef(null);
     const controls = VisibleControls(ref);
 
@@ -49,8 +58,15 @@ const Project = ({ image, i }: { image: string; i: number }) => {
             <Link to="/portfolio">
                 <img
                     src={image}
-                    alt=""
+                    alt={title}
                 />
+                <div className="text">
+                    <h4>{title}</h4>
+                    <div className="tags">
+                        <span className="tag">{category}</span>
+                        {coDeveloped && <span className="tag collaborative">Co-developed</span>}
+                    </div>
+                </div>
             </Link>
         </motion.li>
     );

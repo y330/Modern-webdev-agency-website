@@ -17,12 +17,12 @@ const About = () => {
                     <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>
                         What I do</motion.h2>
                     <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
-                        I am a Toronto-based digital architect dedicated to the creation of immersive, high-performance environments. I engineer premium, cinematic platforms that transcend traditional boundaries and redefine the digital brand experience.
+                        I am a Toronto-based digital creator dedicated to building immersive, high-performance web experiences. I build premium, cinematic platforms that help modern brands stand out and deliver a lasting impact.
                     </motion.p>
                     <motion.h3 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }}>What do I believe?</motion.h3>
 
                     <motion.p initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
-                        I believe the digital space must be a narrative experience, an immersive journey that transcends the traditional destination. I am passionate about the intersection of creative technology and human psychology, harmonizing high-end design with seamless interactivity. Whether I am architecting a bespoke portfolio or a complex digital ecosystem, I am dedicated to the pursuit of digital mastery.
+                        I believe the web should be an experience, not just a destination. With a passion for combining creative technology with clean design, I build websites that feel as good as they function. Whether I am building a custom portfolio or a complex web application, I am dedicated to delivering unique and immersive experiences.
                     </motion.p>
                 </div>
                 <div className="about">

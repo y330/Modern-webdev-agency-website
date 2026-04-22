@@ -42,7 +42,7 @@ const Nav = () => {
         { label: "Portfolio", link: "/portfolio" },
         { label: "Chat With Me", link: "/booking" },
         // { label: "Pricing", link: "/pricing" },
-        { label: "About Us", link: "/about" },
+        { label: "About", link: "/about" },
         { label: "Contact", link: "/contact" }
     ];
 

@@ -10,7 +10,7 @@ const PortfolioShowcase = () => {
             className="portfolio"
             id="portfolio">
             <h2>Portfolio</h2>
-            <h3>Explore some of our latest work</h3>
+            <h3>Explore some of my latest work</h3>
             {/* <div className="portfolio-notice">
                 <p>
                     <strong>Notice:</strong> We are currently working on several exciting projects. Stay tuned for updates!
@@ -20,14 +20,11 @@ const PortfolioShowcase = () => {
                 <Project
                     image="/Images/projects/kultur-screenshot.png"
                     title="Kulture Entertainment"
-                    category="Music Collective"
                     i={0}
                 />
                 <Project
                     image="/Images/projects/actualize-summit.png"
                     title="Actualize Summit"
-                    category="Event"
-                    coDeveloped
                     i={1}
                 />
             </ul>
@@ -41,7 +38,7 @@ const PortfolioShowcase = () => {
     );
 };
 
-const Project = ({ image, title, category, coDeveloped, i }: { image: string; title: string; category: string; coDeveloped?: boolean; i: number }) => {
+const Project = ({ image, title, i }: { image: string; title: string; i: number }) => {
     const ref = useRef(null);
     const controls = VisibleControls(ref);
 
@@ -60,12 +57,7 @@ const Project = ({ image, title, category, coDeveloped, i }: { image: string; ti
                     src={image}
                     alt={title}
                 />
-                <div className="text">
-                    <h4>{title}</h4>
-                    <div className="tags">
-                        <span className="tag">{category}</span>
-                    </div>
-                </div>
+
             </Link>
         </motion.li>
     );

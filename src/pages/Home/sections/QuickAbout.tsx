@@ -18,7 +18,7 @@ const AboutHighlight = () => {
                     visible: { opacity: 1, translateX: 0 },
                     hidden: { opacity: 0, translateX: "-50%" }
                 }}>
-                I specialize in narrative-driven digital architectures that transcend the ordinary.
+                I specialize in cinematic web experiences that help brands stand out.
             </motion.h2>
             <div className="bottom">
                 <motion.p
@@ -28,7 +28,7 @@ const AboutHighlight = () => {
                         visible: { opacity: 1 },
                         hidden: { opacity: 0 }
                     }}>
-                    I bridge the gap between high-concept design and technical engineering to create digital artifacts that don't just exist, they captivate. From cinematic visual systems to complex web platforms, I am dedicated to the pursuit of digital mastery and aesthetic precision.
+                    I combine high-end design with technical engineering to create websites that don't just exist, they captivate. From cinematic visual systems to complex web platforms, I am dedicated to delivering digital excellence and aesthetic precision.
                 </motion.p>
                 <RouterLink
                     variant="link"

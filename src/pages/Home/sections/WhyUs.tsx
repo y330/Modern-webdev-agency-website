@@ -24,7 +24,7 @@ const WhyUs = () => {
                     visible: { opacity: 1, translateY: 0 },
                     hidden: { opacity: 0, translateY: "100%" }
                 }}>
-                Why Choose Me?
+                Why Work With Me?
             </motion.h2>
             <motion.p
                 animate={topControls}
@@ -33,8 +33,7 @@ const WhyUs = () => {
                     visible: { opacity: 1, translateY: 0 },
                     hidden: { opacity: 0, translateY: "100%" }
                 }}>
-                Experience an unparalleled fusion of technical mastery and 
-                <br /> aesthetic precision that commands the digital landscape.
+                I combine creative technology with clean design to build websites that feel as good as they function.
             </motion.p>
             <div
                 ref={midRef}
@@ -56,7 +55,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        Mastery
+                        Quality
                     </motion.h3>
                     <motion.p
                         animate={midControls}
@@ -65,7 +64,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        I deliver world-class digital artifacts with a relentless focus on uncompromising quality and cinematic architectural detail.
+                        I deliver world-class digital experiences with a focus on clean design and uncompromising quality.
                     </motion.p>
                 </div>
                 <div className="item">
@@ -85,7 +84,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        Velocity
+                        Speed
                     </motion.h3>
                     <motion.p
                         animate={midControls}
@@ -94,7 +93,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        I work efficiently to deliver top-notch projects within days on average.
+                        I work efficiently to deliver top-notch projects promptly.
                     </motion.p>
                 </div>
                 <div className="item">
@@ -114,7 +113,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        Avant-Garde
+                        Modern
                     </motion.h3>
                     <motion.p
                         animate={midControls}
@@ -123,7 +122,7 @@ const WhyUs = () => {
                             visible: { opacity: 1, translateY: 0 },
                             hidden: { opacity: 0, translateY: "100%" }
                         }}>
-                        Based in Downtown Toronto, I architect future-forward digital experiences that redefine industry standards and elevate brand presence.
+                        Based in Downtown Toronto, I create modern digital experiences that captivate audiences and grow your business.
                     </motion.p>
                 </div>
             </div>

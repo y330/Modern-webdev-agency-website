@@ -26,7 +26,7 @@ const Footer = () => {
                     <RouterLink to='/start' variant='link'>Get Started</RouterLink>
                     <RouterLink to='/portfolio' variant='link'>Portfolio</RouterLink>
                     {/* <RouterLink to='/pricing' variant='link'>Pricing</RouterLink> */}
-                    <RouterLink to='/about' variant='link'>About Me</RouterLink>
+                    <RouterLink to='/about' variant='link'>About</RouterLink>
                     <RouterLink to='/contact' variant='link'>Contact</RouterLink>
                 </div>
                 <div className="contacts">

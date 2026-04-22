@@ -28,20 +28,20 @@ const Hero = () => {
                 <motion.div
                     initial={{ translateY: "100%", opacity: 0 }}
                     animate={{ translateY: 0, opacity: 1 }}>
-                    Empowering businesses to make an impact.
+                    Empowering brands to make an impact.
                 </motion.div>
                 <motion.div
                     initial={{ translateY: "100%", opacity: 0 }}
                     animate={{ translateY: 0, opacity: 1 }}
                     transition={{ delay: 0.5 }}>
-                    One website at a time.
+                    One immersive experience at a time.
                 </motion.div>
             </h1>
             <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1 }}>
-                I architect digital environments that command attention and define modern brands. Through a fusion of cinematic design and technical mastery, I transform visions into immersive realities.
+                I build premium, cinematic websites that elevate modern brands. Through a blend of high-end design and interactive engineering, I transform your vision into a digital reality.
             </motion.p>
             <motion.div
                 initial={{ translateY: "200%", opacity: 0 }}

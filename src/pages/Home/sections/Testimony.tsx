@@ -28,7 +28,7 @@ const Testimony = () => {
                     hidden: { opacity: 0, translateY: "100%" }
                 }}
                 className="quote">
-                The web must be an experience, not merely a destination.
+                The web must be an experience, not a destination.
             </motion.span>
             <motion.span
                 animate={controls}
@@ -38,7 +38,7 @@ const Testimony = () => {
                     hidden: { opacity: 0, translateY: "100%" }
                 }}
                 className="author">
-                Yonah Aviv
+                — Yonah Aviv
             </motion.span>
         </section>
     );

@@ -33,7 +33,7 @@ const Capabilities = () => {
                         <h2>My Expertise</h2>
                         <h3>Cinematic Web Experiences</h3>
                         <p>
-                            I engineer immersive, interactive digital landscapes that harmonize high-end design with fluid, cinematic motion. My focus is on sensory storytelling and architectural aesthetics that redefine brand identities.
+                            I build immersive, interactive websites that combine high-end design with seamless motion. My focus is on storytelling and cinematic aesthetics that captivate audiences and elevate brand identities.
                         </p>
                         <ul className="feature-list">
                             <li><MdBrush /> Art Direction</li>
@@ -83,7 +83,7 @@ const Capabilities = () => {
                             <MdRocketLaunch />
                         </div>
                         <h4>Digital Products</h4>
-                        <p>Bespoke digital ecosystems and high-performance platforms engineered for infinite scalability and refined user engagement.</p>
+                        <p>Custom e-commerce and high-performance platforms built to scale with modern engineering and refined user engagement.</p>
                     </motion.div>
 
                     <motion.div 
@@ -99,7 +99,7 @@ const Capabilities = () => {
                             <MdAutoAwesome />
                         </div>
                         <h4>AI Integration</h4>
-                        <p>Advanced cognitive systems and specialized LLM architectures designed to optimize digital intelligence and operational fluidty.</p>
+                        <p>Intelligent systems and specialized LLM workflows designed to optimize digital efficiency and operational flow.</p>
                     </motion.div>
                 </div>
             </div>

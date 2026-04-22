@@ -7,10 +7,10 @@ const Portfolio = () => {
     return (
         <AnimatedPage>
             <Helmet>
-                <title>Portfolio – Explore Some of Our Latest Projects</title>
+                <title>Portfolio – Explore Some of My Latest Projects</title>
                 <meta
                     name="description"
-                    content="Explore some of our latest projects"
+                    content="Explore some of my latest projects"
                 />
             </Helmet>
             <section className="portfolio-screen">
@@ -18,7 +18,7 @@ const Portfolio = () => {
                 <motion.h2
                     initial={{ opacity: 0, translateY: "100%" }}
                     animate={{ opacity: 1, translateY: 0 }}>
-                    Explore some of our latest projects
+                    Explore some of my latest projects
                 </motion.h2>
                 {/* <motion.div className="portfolio-notice">
                     <p>

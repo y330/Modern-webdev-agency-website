@@ -35,11 +35,11 @@ const Contact = () => {
         <AnimatedPage>
             <Helmet>
                 <title>Contact – Yonah Studio</title>
-                <meta name="description" content="Get in touch with Yonah Studio to start your next cinematic project. We specialize in high-end web experiences and digital products." />
+                <meta name="description" content="Get in touch with Yonah to start your next cinematic project. We specialize in high-end web experiences and digital products." />
             </Helmet>
             <section className='contact-screen'>
                 <div className='text'>
-                    <h1>Contact Us</h1>
+                    <h1>Contact Me</h1>
                     <motion.h2 initial={{ opacity: 0, translateX: "-100%" }} animate={{ opacity: 1, translateX: 0 }}>
                         Do you have a project<br /> in mind?
                     </motion.h2>

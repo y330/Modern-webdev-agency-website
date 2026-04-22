@@ -30,10 +30,10 @@ const Capabilities = () => {
                             hidden: { opacity: 0, translateY: "20px" }
                         }}
                     >
-                        <h2>Our Expertise</h2>
+                        <h2>My Expertise</h2>
                         <h3>Cinematic Web Experiences</h3>
                         <p>
-                            We craft immersive, interactive digital journeys that blend high-end design with seamless motion. Our focus is on storytelling and cinematic aesthetics that captivate audiences and elevate brands.
+                            I engineer immersive, interactive digital landscapes that harmonize high-end design with fluid, cinematic motion. My focus is on sensory storytelling and architectural aesthetics that redefine brand identities.
                         </p>
                         <ul className="feature-list">
                             <li><MdBrush /> Art Direction</li>
@@ -53,9 +53,19 @@ const Capabilities = () => {
                             hidden: { opacity: 0, scale: 0.95 }
                         }}
                     >
-                        <div className="icon-wrapper">
+                        <motion.div 
+                            className="icon-wrapper"
+                            animate={{ 
+                                scale: [1, 1.05, 1],
+                            }}
+                            transition={{
+                                duration: 4,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }}
+                        >
                             <MdVideocam />
-                        </div>
+                        </motion.div>
                     </motion.div>
                 </div>
 
@@ -73,7 +83,7 @@ const Capabilities = () => {
                             <MdRocketLaunch />
                         </div>
                         <h4>Digital Products</h4>
-                        <p>High-performance e-commerce and custom applications built to scale with modern engineering.</p>
+                        <p>Bespoke digital ecosystems and high-performance platforms engineered for infinite scalability and refined user engagement.</p>
                     </motion.div>
 
                     <motion.div 
@@ -89,7 +99,7 @@ const Capabilities = () => {
                             <MdAutoAwesome />
                         </div>
                         <h4>AI Integration</h4>
-                        <p>Intelligent systems and specialized LLM workflows designed for modern digital efficiency.</p>
+                        <p>Advanced cognitive systems and specialized LLM architectures designed to optimize digital intelligence and operational fluidty.</p>
                     </motion.div>
                 </div>
             </div>

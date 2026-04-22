@@ -28,7 +28,7 @@ const Testimony = () => {
                     hidden: { opacity: 0, translateY: "100%" }
                 }}
                 className="quote">
-                Faith is taking the first step even when you don't see the whole staircase.
+                The web must be an experience, not merely a destination.
             </motion.span>
             <motion.span
                 animate={controls}
@@ -38,7 +38,7 @@ const Testimony = () => {
                     hidden: { opacity: 0, translateY: "100%" }
                 }}
                 className="author">
-                – Martin Luther King Jr.
+                Yonah Aviv
             </motion.span>
         </section>
     );

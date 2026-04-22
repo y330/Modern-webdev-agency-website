@@ -41,7 +41,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1 }}>
-                We help people and businesses build an online presence that matters. One project at a time, we’re working to make a real, positive impact in this world.
+                I architect digital environments that command attention and define modern brands. Through a fusion of cinematic design and technical mastery, I transform visions into immersive realities.
             </motion.p>
             <motion.div
                 initial={{ translateY: "200%", opacity: 0 }}
@@ -51,7 +51,7 @@ const Hero = () => {
                     variant="primary"
                     to="/booking"
                     className="pulsating">
-                    Chat With Us
+                    Chat With Me
                 </RouterLink>
             </motion.div>
         </section>

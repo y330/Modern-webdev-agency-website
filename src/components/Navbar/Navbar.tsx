@@ -28,7 +28,7 @@ const Navbar = () => {
                         src="/Images/Logo.webp"
                         alt=""
                     />
-                    <h2>Aviv Digital</h2>
+                    <h2>Yonah Studio</h2>
                 </div>
             </Link>
             <Nav />
@@ -40,7 +40,7 @@ const Nav = () => {
     const navItemProps = [
         { label: "Home", link: "/" },
         { label: "Portfolio", link: "/portfolio" },
-        { label: "Chat With Us", link: "/booking" },
+        { label: "Chat With Me", link: "/booking" },
         // { label: "Pricing", link: "/pricing" },
         { label: "About Us", link: "/about" },
         { label: "Contact", link: "/contact" }

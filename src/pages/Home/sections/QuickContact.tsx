@@ -30,7 +30,7 @@ const QuickGetStarted = () => {
                         visible: { opacity: 1, translateY: 0 },
                         hidden: { opacity: 0, translateY: "200%" }
                     }}>
-                    Start your journey with us!
+                    Start your journey with me!
                 </motion.div>
             </h3>
             <motion.div

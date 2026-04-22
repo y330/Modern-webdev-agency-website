@@ -11,14 +11,14 @@ const ChatWithUs = () => {
     return (
         <>
             <Helmet>
-                <title>Chat With Us – Book a Free Consultation</title>
+                <title>Chat With Me – Book a Free Consultation</title>
                 <meta
                     name="description"
                     content="Book a free call to discuss your business goals, website needs, and how we can help you grow online."
                 />
             </Helmet>
             <section className="chatwithus-screen">
-                <h1>Chat With Us</h1>
+                <h1>Chat With Me</h1>
                 <motion.h2
                     initial={{ opacity: 0, translateY: "100%" }}
                     animate={{ opacity: 1, translateY: 0 }}

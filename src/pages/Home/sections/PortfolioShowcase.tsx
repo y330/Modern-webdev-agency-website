@@ -64,7 +64,6 @@ const Project = ({ image, title, category, coDeveloped, i }: { image: string; ti
                     <h4>{title}</h4>
                     <div className="tags">
                         <span className="tag">{category}</span>
-                        {coDeveloped && <span className="tag collaborative">Co-developed</span>}
                     </div>
                 </div>
             </Link>

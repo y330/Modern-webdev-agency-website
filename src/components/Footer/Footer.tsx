@@ -11,26 +11,26 @@ const Footer = () => {
                     <Link style={{ textDecoration: "none" }} to="/">
                         <div className="logo">
                             <img src='/Images/Logo.webp' alt='' />
-                            <h2>Aviv Digital</h2>
+                            <h2>Yonah Studio</h2>
                         </div>
                     </Link>
 
                     <p>
-                        We help people and businesses build an online presence that matters. One project at a time, we’re working to make a real, positive impact in this world.
+                        I help people and businesses build an online presence that matters. One project at a time, I'm working to make a real, positive impact in this world.
 
                     </p>
                 </div>
                 <div className="links">
                     <h3>Navigation</h3>
-                    <RouterLink to='/booking' variant='link'>Chat With Us</RouterLink>
+                    <RouterLink to='/booking' variant='link'>Chat With Me</RouterLink>
                     <RouterLink to='/start' variant='link'>Get Started</RouterLink>
                     <RouterLink to='/portfolio' variant='link'>Portfolio</RouterLink>
                     {/* <RouterLink to='/pricing' variant='link'>Pricing</RouterLink> */}
-                    <RouterLink to='/about' variant='link'>About Us</RouterLink>
+                    <RouterLink to='/about' variant='link'>About Me</RouterLink>
                     <RouterLink to='/contact' variant='link'>Contact</RouterLink>
                 </div>
                 <div className="contacts">
-                    <h3>Contact Us</h3>
+                    <h3>Contact Me</h3>
                     <div className="email">
                         <div className="icon">
                             <MdEmail size={20} color="#ccc" />
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="separator"></div>
-            <p className='copyright'>Copyright © 2025 Aviv Digital</p>
+            <p className='copyright'>Copyright © 2026 Yonah Studio</p>
         </footer>
     )
 }

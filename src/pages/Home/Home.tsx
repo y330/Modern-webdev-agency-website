@@ -14,11 +14,8 @@ const Home = () => {
     return (
         <AnimatedPage>
             <Helmet>
-                <title>Aviv Digital – Premium Interactive Digital Experiences</title>
-                <meta
-                    name="description"
-                    content="We craft purpose-driven, premium digital experiences that help modern brands grow online with stunning interactivity, fluid animations, and high-end design."
-                />
+                <title>Yonah Studio – Cinematic Web Experiences</title>
+                <meta name="description" content="I craft purpose-driven, cinematic digital experiences that blend minimalist design with seamless interactivity and custom engineering." />
             </Helmet>
             <div className="home-screen">
                 <Hero />
@@ -26,7 +23,7 @@ const Home = () => {
                 <OurServices />
                 <WhyUs />
                 <PortfolioShowcase />
-                {/* <Testimony /> */}
+                <Testimony />
                 {/* <FeaturedPricing /> */}
                 <QuickContact />
             </div>

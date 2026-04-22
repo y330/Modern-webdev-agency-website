@@ -34,8 +34,8 @@ const Contact = () => {
     return (
         <AnimatedPage>
             <Helmet>
-                <title>Contact Us – Let's Build Your Vision</title>
-                <meta name="description" content="Get in touch with Aviv Digital to start your next creative project. We specialize in high-end web experiences and digital products." />
+                <title>Contact – Yonah Studio</title>
+                <meta name="description" content="Get in touch with Yonah Studio to start your next cinematic project. We specialize in high-end web experiences and digital products." />
             </Helmet>
             <section className='contact-screen'>
                 <div className='text'>

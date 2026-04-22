@@ -18,7 +18,7 @@ const AboutHighlight = () => {
                     visible: { opacity: 1, translateX: 0 },
                     hidden: { opacity: 0, translateX: "-50%" }
                 }}>
-                We specialize in immersive digital experiences that elevate modern brands.
+                I specialize in narrative-driven digital architectures that transcend the ordinary.
             </motion.h2>
             <div className="bottom">
                 <motion.p
@@ -28,13 +28,13 @@ const AboutHighlight = () => {
                         visible: { opacity: 1 },
                         hidden: { opacity: 0 }
                     }}>
-                    We blend high-end design with interactive engineering to create websites that don't just exist — they inspire. From cinematic portfolios to complex web applications, we are committed to delivering digital excellence.
+                    I bridge the gap between high-concept design and technical engineering to create digital artifacts that don't just exist, they captivate. From cinematic visual systems to complex web platforms, I am dedicated to the pursuit of digital mastery and aesthetic precision.
                 </motion.p>
                 <RouterLink
                     variant="link"
                     to="/about"
                     arrow>
-                    Learn more about us
+                    Learn more about me
                 </RouterLink>
             </div>
         </section>

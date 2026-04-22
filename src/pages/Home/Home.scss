@@ -478,9 +478,9 @@
         .projects {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 4rem;
+            gap: 3rem;
             margin-top: 5vh;
-            padding-bottom: 8rem;
+            padding-bottom: 3rem;
             width: 80vw;
 
             .project {

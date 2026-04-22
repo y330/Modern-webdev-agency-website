@@ -28,12 +28,12 @@ const PortfolioShowcase = () => {
                     i={1}
                 />
             </ul>
-            {/* <RouterLink
+            <RouterLink
                 to="/portfolio"
                 variant="link"
                 arrow>
                 See more projects
-            </RouterLink> */}
+            </RouterLink>
         </section>
     );
 };

@@ -38,7 +38,7 @@ const Portfolio = () => {
 
                     <Project
                         title="Actualize Summit"
-                        type="Website"
+                        type="Event"
                         image="/Images/projects/actualize-summit.png"
                         desc="A high-performance landing page for Actualize's yearly summit. Built in collaboration with the Actualize team to deliver a premium registration experience."
                         link="https://actualize.club/summit-toronto"

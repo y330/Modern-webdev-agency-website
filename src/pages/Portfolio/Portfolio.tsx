@@ -50,7 +50,7 @@ const Portfolio = () => {
                         type="Ecommerce"
                         image="/Images/projects/actualize-merch-store.png"
                         desc="A premium custom merch store for Actualize, a community for young entrepreneurial men in Toronto. Designed to provide a sleek e-commerce experience that reflects the brand's identity. (Note: Site currently undergoing maintenance)"
-                        link="#"
+                        link="https://actualize.club"
                         i={1}
                     />
                     <Project

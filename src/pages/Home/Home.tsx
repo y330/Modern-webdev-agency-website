@@ -3,7 +3,7 @@ import "./Home.scss";
 import { Helmet } from "react-helmet-async";
 import Hero from "./sections/Hero";
 import WhyUs from "./sections/WhyUs";
-import Capabilities from "./sections/Capabilities";
+import OurServices from "./sections/OurServices";
 import PortfolioShowcase from "./sections/PortfolioShowcase";
 import Testimony from "./sections/Testimony";
 import FeaturedPricing from "./sections/FeaturedPricing";
@@ -23,7 +23,7 @@ const Home = () => {
             <div className="home-screen">
                 <Hero />
                 <QuickAbout />
-                <Capabilities />
+                <OurServices />
                 <WhyUs />
                 <PortfolioShowcase />
                 {/* <Testimony /> */}

@@ -207,21 +207,32 @@
                     .feature-list {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
-                        gap: 1rem;
+                        gap: 1.5rem 1rem;
                         list-style: none;
-                        margin-top: 1rem;
+                        margin-top: 1.5rem;
 
                         li {
-                            font-size: 1rem;
+                            font-size: 0.95rem;
                             color: theme.$text-header;
                             display: flex;
                             align-items: center;
-                            gap: 0.75rem;
+                            gap: 0.6rem;
                             font-weight: 500;
+                            line-height: 1.2;
 
                             svg {
                                 color: theme.$primary;
-                                font-size: 1.2rem;
+                                font-size: 1.3rem;
+                                flex-shrink: 0;
+                            }
+                        }
+
+                        @media screen and (max-width: 480px) {
+                            grid-template-columns: 1fr;
+                            gap: 1.2rem;
+                            
+                            li {
+                                font-size: 1.05rem;
                             }
                         }
                     }
@@ -498,6 +509,7 @@
                     align-items: center;
                     justify-content: space-between;
                     gap: 1rem;
+                    margin-top: 1rem;
 
                     h4 {
                         font-size: clamp(1.2rem, 2vw, 1.5rem);
@@ -509,21 +521,34 @@
                         display: flex;
                         gap: 0.5rem;
                         align-items: center;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
 
                         .tag {
                             background-color: theme.$secondary-bg;
                             color: theme.$secondary;
-                            padding: 0.2rem 1rem;
+                            padding: 0.3rem 0.8rem;
                             border-radius: 2rem;
-                            font-size: 0.75rem;
+                            font-size: 0.7rem;
                             font-weight: 700;
                             text-transform: uppercase;
                             letter-spacing: 0.05em;
+                            white-space: nowrap;
 
                             &.collaborative {
                                 background-color: theme.$primary-bg;
                                 color: theme.$primary;
                             }
+                        }
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 0.8rem;
+
+                        .tags {
+                            justify-content: flex-start;
                         }
                     }
                 }

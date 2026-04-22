@@ -42,9 +42,9 @@ const QuickGetStarted = () => {
                 }}>
                 <RouterLink
                     variant="primary"
-                    to="/booking"
+                    to="/contact"
                     className="pulsating">
-                    Book a Call
+                    Connect With Me
                 </RouterLink>
             </motion.div>
         </section>

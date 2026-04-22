@@ -29,7 +29,7 @@ const About = () => {
                     <motion.div className="member" initial={{ opacity: 0, translateX: "-100%" }} animate={{ opacity: 1, translateX: 0 }} transition={{ delay: 0.8 }}>
                         <img src="/Images/Me.png" alt="Photo of team member" />
                         <h3>Yonah Aviv</h3>
-                        <p>Presdent</p>
+                        <p>President</p>
                     </motion.div>
                     <div className="text">
                         <motion.h2 initial={{ opacity: 0, translateY: "100%" }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.4 }}>About Me</motion.h2>

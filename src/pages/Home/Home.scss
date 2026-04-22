@@ -367,7 +367,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             justify-content: center;
-            align-items: center;
+            align-items: start;
             gap: 5vw;
             width: 100%;
 
@@ -378,6 +378,20 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+
+                // Target the motion.div wrapper around icons
+                > div:first-child {
+                    height: 120px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+
+                    svg {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
 
                 img {
                     height: 15vh;

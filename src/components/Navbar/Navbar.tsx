@@ -40,10 +40,9 @@ const Nav = () => {
     const navItemProps = [
         { label: "Home", link: "/" },
         { label: "Portfolio", link: "/portfolio" },
-        { label: "Chat With Me", link: "/booking" },
         // { label: "Pricing", link: "/pricing" },
         { label: "About", link: "/about" },
-        { label: "Contact", link: "/contact" }
+        { label: "Connect", link: "/connect" }
     ];
 
     const [burgerOpen, setBurgerOpen] = useState(false);

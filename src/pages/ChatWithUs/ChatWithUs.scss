@@ -7,73 +7,74 @@
     padding: 10vh 15vw;
     min-height: calc(100vh - theme.$navbar-height);
     align-items: center;
+
     h1 {
-        font-size: clamp(1rem, 3vw, 1.5rem);
+        font-size: clamp(1rem, 2vw, 1.25rem);
         color: theme.$primary;
         text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        margin-bottom: 1rem;
     }
 
     h2 {
         font-size: clamp(1rem, 5vw, 2.5rem);
         color: theme.$text-header;
         text-align: center;
+        max-width: 15ch;
+        line-height: 1.1;
+        margin-bottom: 3.5rem;
     }
-    .chatwithus-info {
-        background: #e5f1fb; // fallback for iMessage blue
-        background: theme.$primary-bg;
-        color: theme.$text-header;
-        border-radius: 1rem;
-        position: relative;
-        max-width: 420px;
-        word-break: break-word;
-        margin: 1.5rem auto 0.5rem auto;
-        max-width: 420px;
-        padding: 0.8rem;
-        min-width: 180px;
-        border: 1.5px solid #b2d7fb;
-        border-radius: 1rem;
 
-        p {
-            margin: 0;
-            font-size: inherit;
-            line-height: 1.6;
-        }
-    }
     .chatwithus-img {
         width: 100%;
         height: auto;
         display: block;
-        border: 1.5px solid #b2d7fb;
-        border-radius: 1rem;
+        border: 1px solid theme.$border;
+        border-radius: 1.5rem;
         object-fit: cover;
-        margin: 1.5rem 0 0.5rem 0;
-        max-width: 420px;
-        min-width: 180px;
+        margin-bottom: 3.5rem;
+        max-width: 800px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
     }
 }
 
 .calendar-booking {
-    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
     .calendar-btn {
-        // background: theme.$primary;
-        // color: #fff;
-        // max-width: 90%;
         border-radius: theme.$radius;
         text-decoration: none;
         font-weight: 600;
-        // transition: color 0.2s;
-        // box-shadow: 0 2px 8px rgba(34, 139, 230, 0.07);
+
         &:hover a {
             text-decoration: none;
             color: theme.$primary-bg !important;
         }
     }
-    @media screen and (max-width: 768px) {
-        .calendar-booking {
-            max-width: 50%;
-            .calendar-btn {
-                padding: 0.75rem 2rem;
-            }
+}
+
+.calendar-disclaimer {
+    margin-top: 0.2rem;
+    color: theme.$text;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    text-align: center;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .calendar-booking {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .calendar-btn {
+            width: 100%;
+            max-width: 300px;
         }
     }
 }

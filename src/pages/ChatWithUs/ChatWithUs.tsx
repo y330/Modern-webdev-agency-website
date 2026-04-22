@@ -11,7 +11,7 @@ const ChatWithUs = () => {
     return (
         <>
             <Helmet>
-                <title>Chat With Me – Book a Free Consultation</title>
+                <title>Connect With Me – Book a Free Consultation</title>
                 <meta
                     name="description"
                     content="Book a free call to discuss your business goals, website needs, and how we can help you grow online."
@@ -48,10 +48,11 @@ const ChatWithUs = () => {
                             rel="noopener noreferrer"
                             className="calendar-link"
                         >
-                            Book a Call via Google Calendar
+                            Book a Call
                         </a>
                     </Button>
                 </motion.div>
+                <p className="calendar-disclaimer">Free 15-minute consultation</p>
 
 
             </section >

@@ -41,7 +41,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1 }}>
-                I build premium, cinematic websites that elevate modern brands. Through a blend of high-end design and interactive engineering, I transform your vision into a digital reality.
+                I build premium, cinematic websites that elevate modern brands. Through a blend of high-end design and creative technology, I transform your vision into a digital reality.
             </motion.p>
             <motion.div
                 initial={{ translateY: "200%", opacity: 0 }}

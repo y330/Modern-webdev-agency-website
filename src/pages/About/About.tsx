@@ -8,8 +8,8 @@ const About = () => {
     return (
         <AnimatedPage>
             <Helmet>
-                <title>About – Yonah Studio</title>
-                <meta name="description" content="Yonah Studio is a Toronto-based creative studio specializing in cinematic web experiences, digital products, and high-end interactive engineering." />
+                <title>About – Yonah Aviv</title>
+                <meta name="description" content="Yonah Aviv is a Toronto-based digital creator specializing in cinematic web experiences, digital products, and high-end interactive engineering." />
             </Helmet>
             <div className='about-screen'>
                 <div className="hero">

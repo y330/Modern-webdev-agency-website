@@ -28,7 +28,7 @@ const Navbar = () => {
                         src="/Images/Logo.webp"
                         alt=""
                     />
-                    <h2>Yonah Studio</h2>
+                    <h2>Yonah Aviv</h2>
                 </div>
             </Link>
             <Nav />

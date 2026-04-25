@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <AnimatedPage>
             <Helmet>
-                <title>Yonah Studio – Cinematic Web Experiences</title>
+                <title>Yonah Aviv – Cinematic Web Experiences</title>
                 <meta name="description" content="I craft purpose-driven, cinematic digital experiences that blend minimalist design with seamless interactivity." />
             </Helmet>
             <div className="home-screen">

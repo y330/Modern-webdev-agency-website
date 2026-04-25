@@ -11,13 +11,12 @@ const Footer = () => {
                     <Link style={{ textDecoration: "none" }} to="/">
                         <div className="logo">
                             <img src='/Images/Logo.webp' alt='' />
-                            <h2>Yonah Studio</h2>
+                            <h2>Yonah Aviv</h2>
                         </div>
                     </Link>
 
                     <p>
-                        I help people and businesses build an online presence that matters. One project at a time, I'm working to make a real, positive impact in this world.
-
+                        I craft premium, cinematic web experiences that elevate modern brands. Through a blend of high-end design and creative technology, I transform digital visions into immersive realities.
                     </p>
                 </div>
                 <div className="links">
@@ -43,7 +42,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="separator"></div>
-            <p className='copyright'>Copyright © 2026 Yonah Studio</p>
+            <p className='copyright'>Copyright © 2026 Yonah Aviv</p>
         </footer>
     )
 }

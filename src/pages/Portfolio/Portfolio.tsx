@@ -36,7 +36,7 @@ const Portfolio = () => {
                     />
 
 
-                    <Project
+                    {/* <Project
                         title="Actualize Summit"
                         type="Event"
                         image="/Images/projects/actualize-summit.png"
@@ -44,13 +44,13 @@ const Portfolio = () => {
                         link="https://actualize.club/summit-toronto"
                         coDeveloped
                         i={2}
-                    />
+                    /> */}
                     <Project
                         title="Actualize Apparel"
                         type="Ecommerce"
                         image="/Images/projects/actualize-merch-store.png"
-                        desc="A premium custom merch store for Actualize, a community for young entrepreneurial men in Toronto. Designed to provide a sleek e-commerce experience that reflects the brand's identity. (Note: Site currently undergoing maintenance)"
-                        link="https://actualize.club"
+                        desc="A premium custom merch store for Actualize, a community for young entrepreneurial men in Toronto. Designed to provide a sleek e-commerce experience that reflects the brand's identity."
+                        link="https://shop.actualize.club/apparel"
                         i={1}
                     />
                     <Project

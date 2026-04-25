@@ -23,8 +23,8 @@ const PortfolioShowcase = () => {
                     i={0}
                 />
                 <Project
-                    image="/Images/projects/actualize-summit.png"
-                    title="Actualize Summit"
+                    image="/Images/projects/actualize-merch-store.png"
+                    title="Actualize Apparel"
                     i={1}
                 />
             </ul>
